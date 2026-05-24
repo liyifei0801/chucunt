@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>市场化就业全周期服务 - 楚创通</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #10b981 0%, #14b8a6 50%, #06b6d4 100%);
+            --dark-bg: #0a0e1a;
+            --dark-card: #111827;
+            --dark-border: #1f2937;
+            --glow-green: rgba(16, 185, 129, 0.3);
+            --glow-teal: rgba(20, 184, 166, 0.3);
+            --glow-cyan: rgba(6, 182, 212, 0.3);
+        }
+
+        .jiuye-hero {
+            background: var(--dark-bg);
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .jiuye-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 10% 50%, var(--glow-green) 0%, transparent 40%),
+                radial-gradient(circle at 50% 20%, var(--glow-teal) 0%, transparent 40%),
+                radial-gradient(circle at 90% 60%, var(--glow-cyan) 0%, transparent 40%);
+            animation: gradientShift 12s ease-in-out infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.7; }
+        }
+
+        .hero-network {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 700px;
+            height: 700px;
+        }
+
+        .network-node {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #10b981;
+            border-radius: 50%;
+            animation: nodePulse 3s ease-in-out infinite;
+        }
+
+        .network-node:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+        .network-node:nth-child(2) { top: 20%; right: 15%; animation-delay: 0.5s; }
+        .network-node:nth-child(3) { bottom: 15%; left: 25%; animation-delay: 1s; }
+        .network-node:nth-child(4) { bottom: 25%; right: 20%; animation-delay: 1.5s; }
+        .network-node:nth-child(5) { top: 50%; left: 50%; animation-delay: 2s; }
+
+        @keyframes nodePulse {
+            0%, 100% { transform: scale(1); opacity: 0.6; }
+            50% { transform: scale(1.5); opacity: 1; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            padding: 120px 0;
+        }
+
+        .hero-icon {
+            font-size: 96px;
+            margin-bottom: 24px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .hero-title {
+            font-size: 52px;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: #9ca3af;
+            margin-bottom: 48px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 60px;
+        }
+
+        .stat-card {
+            background: rgba(17, 24, 39, 0.7);
+            border: 1px solid var(--dark-border);
+            border-radius: 20px;
+            padding: 28px 20px;
+            text-align: center;
+            backdrop-filter: blur(15px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .stat-card:hover {
+            border-color: #14b8a6;
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(20, 184, 166, 0.2);
+        }
+
+        .stat-number {
+            font-size: 40px;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #9ca3af;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        /* 服务流程 */
+        .process-section {
+            background: linear-gradient(180deg, var(--dark-bg) 0%, #111827 100%);
+            padding: 100px 0;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 16px;
+            color: #f9fafb;
+        }
+
+        .section-desc {
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 60px;
+            font-size: 16px;
+        }
+
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background: rgba(17, 24, 39, 0.6);
+            border: 1px solid var(--dark-border);
+            border-radius: 24px;
+            padding: 36px 28px;
+            backdrop-filter: blur(15px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .service-card:hover {
+            border-color: #10b981;
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(16, 185, 129, 0.2);
+        }
+
+        .service-icon {
+            width: 68px;
+            height: 68px;
+            background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .service-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #f9fafb;
+            margin-bottom: 12px;
+        }
+
+        .service-desc {
+            color: #9ca3af;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+
+        .service-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 10px;
+            color: #34d399;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .service-btn:hover {
+            background: rgba(16, 185, 129, 0.25);
+            border-color: #10b981;
+        }
+
+        /* 流程详情 */
+        .process-details {
+            display: none;
+        }
+
+        .process-details.active {
+            display: block;
+        }
+
+        .timeline-wrapper {
+            position: relative;
+        }
+
+        .timeline-wrapper::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #10b981 0%, #14b8a6 50%, #06b6d4 100%);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 48px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            order: 2;
+        }
+
+        .timeline-item:nth-child(even) .timeline-icon {
+            order: 1;
+            margin-left: 0;
+            margin-right: 32px;
+        }
+
+        .timeline-number {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 44px;
+            height: 44px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            color: white;
+            z-index: 10;
+            box-shadow: 0 0 25px rgba(20, 184, 166, 0.4);
+        }
+
+        .timeline-content {
+            flex: 1;
+            background: rgba(17, 24, 39, 0.6);
+            border: 1px solid var(--dark-border);
+            border-radius: 16px;
+            padding: 28px;
+            backdrop-filter: blur(15px);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            border-color: #14b8a6;
+            box-shadow: 0 15px 35px rgba(20, 184, 166, 0.15);
+        }
+
+        .timeline-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #f9fafb;
+            margin-bottom: 12px;
+        }
+
+        .timeline-desc {
+            color: #9ca3af;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 14px;
+        }
+
+        .timeline-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag-ai, .tag-human {
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .tag-ai {
+            background: rgba(20, 184, 166, 0.15);
+            border: 1px solid rgba(20, 184, 166, 0.3);
+            color: #2dd4bf;
+        }
+
+        .tag-human {
+            background: rgba(249, 115, 22, 0.15);
+            border: 1px solid rgba(249, 115, 22, 0.3);
+            color: #fb923c;
+        }
+
+        .timeline-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1));
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            margin-left: 32px;
+            transition: all 0.3s ease;
+        }
+
+        /* 特色功能 */
+        .features-section {
+            background: var(--dark-bg);
+            padding: 100px 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: rgba(17, 24, 39, 0.5);
+            border: 1px solid var(--dark-border);
+            border-radius: 20px;
+            padding: 32px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            border-color: #06b6d4;
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin: 0 auto 20px;
+        }
+
+        .feature-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #f9fafb;
+            margin-bottom: 12px;
+        }
+
+        .feature-desc {
+            color: #9ca3af;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* 数据统计 */
+        .stats-section {
+            background: linear-gradient(180deg, #111827 0%, var(--dark-bg) 100%);
+            padding: 100px 0;
+        }
+
+        .stats-overview {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .stats-card {
+            background: rgba(17, 24, 39, 0.6);
+            border: 1px solid var(--dark-border);
+            border-radius: 24px;
+            padding: 40px;
+            backdrop-filter: blur(15px);
+            transition: all 0.3s ease;
+        }
+
+        .stats-card:hover {
+            border-color: #10b981;
+        }
+
+        .stats-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .stats-icon {
+            font-size: 48px;
+        }
+
+        .stats-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #f9fafb;
+        }
+
+        .stats-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .stats-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        .stats-item::before {
+            content: '✓';
+            color: #34d399;
+            font-weight: 700;
+        }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, #10b981 0%, #14b8a6 50%, #06b6d4 100%);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .cta-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 14px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-desc {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 18px;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-btn-primary {
+            background: white;
+            color: #10b981;
+            padding: 18px 48px;
+            border-radius: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-btn-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            padding: 18px 48px;
+            border-radius: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 992px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero-title {
+                font-size: 36px;
+            }
+            
+            .service-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+            }
+            
+            .timeline-item:nth-child(even) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-icon {
+                order: initial;
+            }
+            
+            .timeline-icon {
+                margin: 20px 0 !important;
+            }
+            
+            .timeline-wrapper::before {
+                left: 20px;
+            }
+            
+            .timeline-number {
+                left: 20px;
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stats-overview {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .service-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="main-header" id="mainHeader" style="background: rgba(10, 14, 26, 0.9); backdrop-filter: blur(15px);">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html" class="brand-logo">
+                    <span class="logo-icon">💼</span>
+                    <div class="logo-text">
+                        <span class="logo-title">楚创通</span>
+                        <span class="logo-subtitle">大学生全周期生涯规划多模态 AI 平台</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
+                    <li class="nav-item"><a href="solutions.html" class="nav-link">解决方案</a></li>
+                    <li class="nav-item"><a href="engines.html" class="nav-link active">核心引擎</a></li>
+                    <li class="nav-item"><a href="cases.html" class="nav-link">落地成果</a></li>
+                    <li class="nav-item"><a href="ecosystem.html" class="nav-link">合作生态</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="login.html" class="btn-primary-gradient">立即体验</a>
+                <a href="contact.html" class="btn-outline-primary">合作咨询</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero 区 -->
+    <section class="jiuye-hero">
+        <div class="hero-network">
+            <div class="network-node"></div>
+            <div class="network-node"></div>
+            <div class="network-node"></div>
+            <div class="network-node"></div>
+            <div class="network-node"></div>
+        </div>
+        <div class="hero-content">
+            <div class="section-container" style="text-align: center;">
+                <div class="hero-icon">💼</div>
+                <h1 class="hero-title">市场化就业全周期服务</h1>
+                <p class="hero-subtitle">从岗位智能匹配、求职材料优化到校企对接入职，AI 全程助力高质量就业</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">核心服务模块</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">合作企业</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">就业成功率</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10000+</div>
+                        <div class="stat-label">成功就业案例</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务流程 -->
+    <section class="process-section">
+        <div class="section-container">
+            <h2 class="section-title">💼 四大核心服务</h2>
+            <p class="section-desc">AI 智能匹配 + 人工专业指导，实现高质量就业</p>
+            
+            <div class="service-cards">
+                <div class="service-card" onclick="showProcess('matching')">
+                    <div class="service-icon">🎯</div>
+                    <h3 class="service-title">岗位智能匹配</h3>
+                    <p class="service-desc">基于个人条件研判与智能岗位匹配，精准推荐适合的行业与岗位</p>
+                    <span class="service-btn">查看流程</span>
+                </div>
+                
+                <div class="service-card" onclick="showProcess('materials')">
+                    <div class="service-icon">📄</div>
+                    <h3 class="service-title">求职材料优化</h3>
+                    <p class="service-desc">求职材料梳理与科创成果转化，打造专业求职简历与材料</p>
+                    <span class="service-btn">查看流程</span>
+                </div>
+                
+                <div class="service-card" onclick="showProcess('policy')">
+                    <div class="service-icon">📋</div>
+                    <h3 class="service-title">招聘政策解读</h3>
+                    <p class="service-desc">定向企业招聘政策与招录信息解读，把握就业机会</p>
+                    <span class="service-btn">查看流程</span>
+                </div>
+                
+                <div class="service-card" onclick="showProcess('interview')">
+                    <div class="service-icon">🤝</div>
+                    <h3 class="service-title">校企对接服务</h3>
+                    <p class="service-desc">校企对接笔试面试与入职护航，全程陪伴求职之路</p>
+                    <span class="service-btn">查看流程</span>
+                </div>
+            </div>
+
+            <!-- 岗位智能匹配流程 -->
+            <div class="process-details active" id="matching">
+                <h3 class="section-title" style="font-size: 28px; margin-bottom: 40px;">🎯 个人条件研判与智能岗位匹配</h3>
+                <div class="timeline-wrapper">
+                    <div class="timeline-item">
+                        <div class="timeline-number">01</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">个人求职基础条件收集与梳理</h4>
+                            <p class="timeline-desc">完善专业信息、技能证书、实习经历、薪资地域诉求，AI 进行基础条件拆解、专业能力画像、求职诉求汇总，梳理岗位适配基础门槛与行业要求</p>
+                            <div class="timeline-tags">
+                                <span class="tag-human">人工：完善个人信息</span>
+                                <span class="tag-ai">AI：条件拆解 + 能力画像</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">📊</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">02</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">多维优势整合与竞争力研判</h4>
+                            <p class="timeline-desc">AI 整合学历、竞赛、科研、双创等加分数据，进行优势匹配分支（技术类/综合类），综合打分研判核心求职竞争力</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：优势整合 + 竞争力评估</span>
+                                <span class="tag-human">人工：确认优势方向</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">🔍</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">03</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">行业岗位大数据智能匹配</h4>
+                            <p class="timeline-desc">AI 联动企业库筛选适配行业与岗位，生成保底/适配/优质梯度岗位清单，解读岗位内容、要求、发展、薪资福利</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：岗位匹配 + 梯度推荐</span>
+                                <span class="tag-human">人工：浏览筛选</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">🎯</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">04</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">意向岗位二次筛选与精准定位</h4>
+                            <p class="timeline-desc">人工删减不符岗位，筛选意向方向，AI 标注岗位优势与入职难点，对比同类岗位提供选择参考</p>
+                            <div class="timeline-tags">
+                                <span class="tag-human">人工：筛选意向</span>
+                                <span class="tag-ai">AI：优势标注 + 对比分析</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">✅</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">05</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">岗位数据归档与下一流程对接</h4>
+                            <p class="timeline-desc">AI 归档岗位信息生成专属档案，关联合作企业资源库，输出岗位适配提升建议，确认目标岗位后进入企业政策解读流程</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：归档 + 建议输出</span>
+                                <span class="tag-human">人工：确认目标</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">📁</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 求职材料优化流程 -->
+            <div class="process-details" id="materials">
+                <h3 class="section-title" style="font-size: 28px; margin-bottom: 40px;">📄 求职材料梳理与科创成果转化</h3>
+                <div class="timeline-wrapper">
+                    <div class="timeline-item">
+                        <div class="timeline-number">01</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">求职材料要求梳理与框架搭建</h4>
+                            <p class="timeline-desc">AI 汇总全套必备求职材料清单，结合岗位属性定制材料内容框架，拆分简历核心模块、优势展示板块</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：清单汇总 + 框架定制</span>
+                                <span class="tag-human">人工：确认框架</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">🏗️</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">02</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">科创与学历优势转化赋能</h4>
+                            <p class="timeline-desc">AI 对接科创成果转化引擎，将科研类成果转化为专业能力、竞赛类奖项转化为团队协作、双创项目转化为运营问题解决经历</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：成果转化 + 优势强化</span>
+                                <span class="tag-human">人工：筛选核心经历</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">💡</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">03</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">全套求职材料初稿智能生成</h4>
+                            <p class="timeline-desc">AI 一键生成简历、自我介绍、实践经历初稿，贴合企业与岗位需求调整内容侧重点，量化成果、优化表述</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：初稿生成 + 内容调整</span>
+                                <span class="tag-human">人工：补充细节</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">📝</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">04</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">材料 AI 精细化打磨与合规校验</h4>
+                            <p class="timeline-desc">AI 进行语言润色、专业术语优化、语句精简，统一格式排版、适配企业投递标准，核查内容真实性、岗位匹配度</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：润色优化 + 合规校验</span>
+                                <span class="tag-human">人工：逐段核对</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">✅</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">05</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">材料终稿与分类归档备用</h4>
+                            <p class="timeline-desc">AI 生成终稿输出线上/线下双版本，标注简历微调方向便于多岗位复用，归档科创成果附件、证书扫描件</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：终稿输出 + 归档</span>
+                                <span class="tag-human">人工：终审确认</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">📤</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 招聘政策解读流程 -->
+            <div class="process-details" id="policy">
+                <h3 class="section-title" style="font-size: 28px; margin-bottom: 40px;">📋 定向企业招聘政策与招录信息解读</h3>
+                <div class="timeline-wrapper">
+                    <div class="timeline-item">
+                        <div class="timeline-number">01</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">意向岗位定向企业资源匹配</h4>
+                            <p class="timeline-desc">AI 根据锁定目标岗位定向关联对应行业合作企业名录，同步合作企业官方后台数据实时抓取最新招聘动态</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：企业匹配 + 信息抓取</span>
+                                <span class="tag-human">人工：确认范围</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">🔍</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">02</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">企业招录核心政策整合拆解</h4>
+                            <p class="timeline-desc">AI 整合企业基础招聘规则、招录人数、录用标准、试用期要求，分类解读应届生专属政策、校招优待</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：政策整合 + 分类解读</span>
+                                <span class="tag-human">人工：重点关注</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">📊</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">03</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">关键时间节点与报名流程梳理</h4>
+                            <p class="timeline-desc">AI 精准梳理报名开放时间、材料截止日期、笔面试排布周期，标注报名入口、投递渠道、系统操作流程</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：时间梳理 + 流程标注</span>
+                                <span class="tag-human">人工：核对安排</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">📅</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">04</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">招录材料与考核要求明确</h4>
+                            <p class="timeline-desc">AI 依据企业官方要求生成岗位专属材料提交清单，说明笔试范围、面试形式、考核重点、淘汰规则</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：清单生成 + 要求说明</span>
+                                <span class="tag-human">人工：材料准备</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">📋</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">05</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">政策文档汇总与长效同步</h4>
+                            <p class="timeline-desc">AI 整合政策、招录信息、时间规划生成专属汇编文档，开启实时更新自动同步企业临时调整公告</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：文档汇总 + 实时同步</span>
+                                <span class="tag-human">人工：熟知流程</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">📁</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 校企对接服务流程 -->
+            <div class="process-details" id="interview">
+                <h3 class="section-title" style="font-size: 28px; margin-bottom: 40px;">🤝 校企对接笔试面试与入职护航</h3>
+                <div class="timeline-wrapper">
+                    <div class="timeline-item">
+                        <div class="timeline-number">01</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">岗位一键投递与求职进度绑定</h4>
+                            <p class="timeline-desc">人工依托校企端口上传材料完成线上岗位投递，AI 同步企业 HR 回执绑定求职进度台账，实时更新简历筛选、考核安排等动态信息</p>
+                            <div class="timeline-tags">
+                                <span class="tag-human">人工：岗位投递</span>
+                                <span class="tag-ai">AI：进度绑定 + 信息更新</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">📤</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">02</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">岗位专属笔试专项强化辅导</h4>
+                            <p class="timeline-desc">AI 依据考核大纲梳理笔试考点与知识范围，搭建专属题库推送刷题任务与知识点精讲，组织模拟笔试、错题整理、薄弱项补强</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：考点梳理 + 题库搭建</span>
+                                <span class="tag-human">人工：自主训练</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">📚</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">03</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">多场景全类型面试模拟训练</h4>
+                            <p class="timeline-desc">AI 匹配企业面试形式定制专项训练方案，生成高频面试题、优化自我介绍与答题模板，线上全真模拟面试分析表达、仪态短板问题</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：方案定制 + 模拟面试</span>
+                                <span class="tag-human">人工：反复打磨</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">🎤</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">04</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">校企双向对接与招录进度跟进</h4>
+                            <p class="timeline-desc">AI 联动合作企业同步面试时间、地点、流程变更通知，实时反馈面试结果、复试安排、录用公示信息，对接校内就业中心提供求职咨询</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：信息同步 + 进度跟进</span>
+                                <span class="tag-human">人工：查阅通知</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">🤝</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">05</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">入职指引与长效职业发展护航</h4>
+                            <p class="timeline-desc">AI 生成入职办理指南、材料清单、岗前注意事项，解读就业补贴、新人扶持等地方保障政策，开启长效跟踪提供职场适应与晋升规划建议</p>
+                            <div class="timeline-tags">
+                                <span class="tag-ai">AI：入职指引 + 政策解读</span>
+                                <span class="tag-human">人工：熟知流程</span>
+                            </div>
+                        </div>
+                        <div class="timeline-icon">🎯</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色功能 -->
+    <section class="features-section">
+        <div class="section-container">
+            <h2 class="section-title">✨ AI 就业辅助特色</h2>
+            <p class="section-desc">智能工具助力高质量就业</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">智能岗位匹配</h3>
+                    <p class="feature-desc">基于个人条件与岗位大数据，精准匹配适合的行业与岗位，提供梯度推荐</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3 class="feature-title">简历智能优化</h3>
+                    <p class="feature-desc">AI 一键生成简历初稿，智能润色优化，量化成果，提升简历竞争力</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3 class="feature-title">科创成果转化</h3>
+                    <p class="feature-desc">将科研、竞赛、双创成果转化为求职优势，强化核心竞争力</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3 class="feature-title">招聘政策解读</h3>
+                    <p class="feature-desc">实时抓取企业招聘动态，深度解读招录政策与时间节点</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎤</div>
+                    <h3 class="feature-title">面试模拟训练</h3>
+                    <p class="feature-desc">全真模拟面试场景，智能分析表达与仪态问题，提供改进建议</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3 class="feature-title">校企对接服务</h3>
+                    <p class="feature-desc">联动合作企业，同步招录信息，提供从投递到入职的全流程服务</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据统计 -->
+    <section class="stats-section">
+        <div class="section-container">
+            <h2 class="section-title">📈 就业数据一览</h2>
+            <p class="section-desc">我们的就业服务成果</p>
+            
+            <div class="stats-overview">
+                <div class="stats-card">
+                    <div class="stats-header">
+                        <div class="stats-icon">🎯</div>
+                        <h3 class="stats-title">岗位匹配</h3>
+                    </div>
+                    <ul class="stats-list">
+                        <li class="stats-item">5000+ 合作企业</li>
+                        <li class="stats-item">10000+ 优质岗位</li>
+                        <li class="stats-item">85% 匹配成功率</li>
+                        <li class="stats-item">覆盖 30+ 行业</li>
+                    </ul>
+                </div>
+                
+                <div class="stats-card">
+                    <div class="stats-header">
+                        <div class="stats-icon">📄</div>
+                        <h3 class="stats-title">材料优化</h3>
+                    </div>
+                    <ul class="stats-list">
+                        <li class="stats-item">8000+ 简历优化</li>
+                        <li class="stats-item">75% 面试通过率提升</li>
+                        <li class="stats-item">200+ 科创成果转化</li>
+                        <li class="stats-item">90% 用户满意度</li>
+                    </ul>
+                </div>
+                
+                <div class="stats-card">
+                    <div class="stats-header">
+                        <div class="stats-icon">🤝</div>
+                        <h3 class="stats-title">校企对接</h3>
+                    </div>
+                    <ul class="stats-list">
+                        <li class="stats-item">500+ 校企合作协议</li>
+                        <li class="stats-item">300+ 专场招聘会</li>
+                        <li class="stats-item">6000+ 成功入职</li>
+                        <li class="stats-item">95% 企业好评率</li>
+                    </ul>
+                </div>
+                
+                <div class="stats-card">
+                    <div class="stats-header">
+                        <div class="stats-icon">👥</div>
+                        <h3 class="stats-title">服务客户</h3>
+                    </div>
+                    <ul class="stats-list">
+                        <li class="stats-item">100+ 高校合作</li>
+                        <li class="stats-item">10000+ 学生用户</li>
+                        <li class="stats-item">500+ 就业指导老师</li>
+                        <li class="stats-item">88% 整体就业率</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="section-container">
+            <h2 class="cta-title">开启高质量就业之旅</h2>
+            <p class="cta-desc">AI 智能匹配，专业团队护航，让求职之路更加顺畅</p>
+            <div class="cta-buttons">
+                <a href="login.html" class="cta-btn-primary">开始求职之旅</a>
+                <a href="contact.html" class="cta-btn-secondary">咨询服务</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="main-footer" style="background: #0a0e1a;">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">💼</span>
+                    <span class="footer-title">楚创通</span>
+                    <span class="footer-subtitle">大学生全周期生涯规划多模态 AI 平台</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">首页</a>
+                    <a href="about.html">关于我们</a>
+                    <a href="solutions.html">解决方案</a>
+                    <a href="engines.html">核心引擎</a>
+                    <a href="cases.html">落地成果</a>
+                    <a href="ecosystem.html">合作生态</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2024 楚创通。All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function showProcess(processId) {
+            // 隐藏所有流程详情
+            document.querySelectorAll('.process-details').forEach(el => el.classList.remove('active'));
+            
+            // 显示选中的流程
+            document.getElementById(processId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

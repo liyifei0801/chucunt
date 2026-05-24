@@ -1,0 +1,2208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>升学创 - 楚创通</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 模块1：顶部固定悬浮导航栏 -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html" class="brand-logo">
+                    <span class="logo-icon">🚀</span>
+                    <div class="logo-text">
+                        <span class="logo-title">楚创通</span>
+                        <span class="logo-subtitle">大学生全周期生涯规划多模态AI平台</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
+                    <li class="nav-item"><a href="solutions.html" class="nav-link">解决方案</a></li>
+                    <li class="nav-item"><a href="engines.html" class="nav-link">核心引擎</a></li>
+                    <li class="nav-item"><a href="cases.html" class="nav-link">落地成果</a></li>
+                    <li class="nav-item"><a href="ecosystem.html" class="nav-link">合作生态</a></li>
+                    <li class="nav-item"><a href="index.html#team" class="nav-link">核心团队</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="login.html" class="btn-primary-gradient">立即体验</a>
+                <a href="contact.html" class="btn-outline-primary">合作咨询</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+
+
+    <!-- 左侧垂直引擎切换侧边栏 -->
+    <aside class="engine-left-sidebar" id="engine-sidebar">
+        <div class="sidebar-logo">
+            <span class="sidebar-icon">🚀</span>
+            <span class="sidebar-title">核心引擎</span>
+        </div>
+        <div class="engine-tabs-list">
+            <!-- 升学创 -->
+            <div class="engine-group">
+                <button class="engine-tab-btn active" data-engine="shengxuechuang" id="shengxue">
+                    <span class="tab-icon">📚</span>
+                    <div class="tab-text">
+                        <span class="tab-name">升学创</span>
+                        <span class="tab-type">进阶引擎</span>
+                    </div>
+                </button>
+                <div class="sub-tabs-list" data-engine="shengxuechuang">
+                    <button class="sub-tab-btn active" data-tab="zexiao">择校智能匹配</button>
+                    <button class="sub-tab-btn" data-tab="beikao">分赛道备考辅导</button>
+                    <button class="sub-tab-btn" data-tab="beijing">背景提升与材料制作</button>
+                    <button class="sub-tab-btn" data-tab="mianshi">面试全真模拟</button>
+                </div>
+            </div>
+            <!-- 研赛创 -->
+            <div class="engine-group">
+                <a href="yansaichuang.html" class="engine-tab-btn" data-engine="yansaichuang" id="yansai">
+                    <span class="tab-icon">🔬</span>
+                    <div class="tab-text">
+                        <span class="tab-name">研赛创</span>
+                        <span class="tab-type">循环引擎</span>
+                    </div>
+                </a>
+                <div class="sub-tabs-list" data-engine="yansaichuang" style="display: none;">
+                    <button class="sub-tab-btn active" data-tab="keyan2">科研辅助</button>
+                    <button class="sub-tab-btn" data-tab="jingsai2">竞赛备赛</button>
+                    <button class="sub-tab-btn" data-tab="chuangye2">创新创业</button>
+                </div>
+            </div>
+            <!-- 职途创 -->
+            <div class="engine-group">
+                <a href="zhituchuang.html" class="engine-tab-btn" data-engine="zhituchuang" id="zhitu">
+                    <span class="tab-icon">💼</span>
+                    <div class="tab-text">
+                        <span class="tab-name">职途创</span>
+                        <span class="tab-type">护航引擎</span>
+                    </div>
+                </a>
+                <div class="sub-tabs-list" data-engine="zhituchuang" style="display: none;">
+                    <button class="sub-tab-btn active" data-tab="shichang2">市场化就业</button>
+                    <button class="sub-tab-btn" data-tab="tizhi2">体制内招录</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-footer">
+            <a href="contact.html" class="sidebar-cta-btn">立即体验</a>
+        </div>
+    </aside>
+
+    <!-- 引擎详情页面容器 -->
+    <div class="engine-detail-page">
+        <!-- 首屏Hero区 -->
+        <section class="engine-hero-section" id="hero-section">
+            <div class="engine-hero-container">
+                <div class="engine-hero-left">
+                    <div class="engine-badge" id="hero-engine-badge">升学创・进阶引擎</div>
+                    <h1 class="engine-hero-title" id="hero-title">AI赋能，升学无忧</h1>
+                    <p class="engine-hero-desc" id="hero-desc">覆盖专升本/考研/保研/留学全赛道，智能匹配，精准规划</p>
+                    <div class="engine-hero-stats">
+                        <div class="hero-stat">
+                            <div class="stat-value">90%+</div>
+                            <div class="stat-label">院校匹配精准度</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="stat-value">60%+</div>
+                            <div class="stat-label">备考效率提升</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="stat-value">38%+</div>
+                            <div class="stat-label">申请通过率提升</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="engine-hero-right">
+                    <div class="hero-diagram">
+                        <div class="diagram-item active">择校智能匹配</div>
+                        <div class="diagram-item">分赛道备考辅导</div>
+                        <div class="diagram-item">背景提升与材料制作</div>
+                        <div class="diagram-item">面试全真模拟</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#flow-content" class="scroll-indicator">
+                <span>向下滚动</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </a>
+        </section>
+
+
+
+        <!-- 沉浸式流程滚动区 -->
+        <section class="flow-content-container" id="flow-content">
+            <!-- 升学创·择校智能匹配 -->
+            <div class="flow-panel active" id="flow-zexiao">
+                <!-- 流程总览卡片 -->
+                <div class="flow-overview-section">
+                    <div class="overview-card">
+                        <div class="overview-header">
+                            <h2 class="overview-title">🚀 升学创·择校智能匹配全流程</h2>
+                            <div class="overview-stats">
+                                <div class="stat-card">
+                                    <span class="stat-num">25</span>
+                                    <span class="stat-desc">核心节点</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-num">4</span>
+                                    <span class="stat-desc">递进阶段</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-num">4</span>
+                                    <span class="stat-desc">赛道路径</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-num">2</span>
+                                    <span class="stat-desc">循环校验</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phase-progress">
+                            <div class="phase-item active">
+                                <span class="phase-num">01</span>
+                                <span class="phase-name">背景评估</span>
+                            </div>
+                            <div class="phase-connector"></div>
+                            <div class="phase-item">
+                                <span class="phase-num">02</span>
+                                <span class="phase-name">智能匹配</span>
+                            </div>
+                            <div class="phase-connector"></div>
+                            <div class="phase-item">
+                                <span class="phase-num">03</span>
+                                <span class="phase-name">筛选确认</span>
+                            </div>
+                            <div class="phase-connector"></div>
+                            <div class="phase-item">
+                                <span class="phase-num">04</span>
+                                <span class="phase-name">清单输出</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第一阶段：个人背景与赛道适配性评估 -->
+                <div class="flow-section phase-section" id="zexiao-phase1">
+                    <div class="phase-header">
+                        <div class="phase-badge phase-1">第一阶段</div>
+                        <h3 class="phase-title">个人背景与赛道适配性评估</h3>
+                        <p class="phase-desc">完成用户个人信息采集、竞争力评估、赛道政策分析与需求确认</p>
+                    </div>
+                    
+                    <div class="flow-graph">
+                        <!-- 节点1：项目启动 -->
+                        <div class="graph-node start-node">
+                            <div class="node-icon">▶️</div>
+                            <div class="node-title">项目启动</div>
+                            <div class="node-type">触发节点</div>
+                            <div class="node-detail">用户发起择校匹配需求</div>
+                        </div>
+                        <div class="graph-connector">
+                            <svg class="connector-line" viewBox="0 0 100 20" preserveAspectRatio="none">
+                                <path d="M0 10 L90 10" stroke="url(#gradient1)" stroke-width="2" fill="none" marker-end="url(#arrowhead1)"/>
+                                <defs>
+                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#00d4ff"/>
+                                        <stop offset="100%" style="stop-color:#7c3aed"/>
+                                    </linearGradient>
+                                    <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                        <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+                                    </marker>
+                                </defs>
+                            </svg>
+                        </div>
+                        
+                        <!-- 节点2：个人信息与核心需求提交 -->
+                        <div class="graph-node human-node">
+                            <div class="node-icon">👤</div>
+                            <div class="node-title">个人信息提交</div>
+                            <div class="node-type">人工处理</div>
+                            <div class="node-detail">提交学历、成绩、专业背景，选定目标赛道</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">个人基础信息包、目标赛道、核心需求</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        
+                        <!-- 节点3：个人背景与核心竞争力测评 -->
+                        <div class="graph-node ai-node">
+                            <div class="node-icon">🤖</div>
+                            <div class="node-title">竞争力测评</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">基于个人信息与赛道，完成专属维度背景测评</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">竞争力测评报告、优劣势拆解报告</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        
+                        <!-- 节点4：赛道政策与录取大数据分析 -->
+                        <div class="graph-node ai-node">
+                            <div class="node-icon">📊</div>
+                            <div class="node-title">大数据分析</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">分析最新政策、历年录取情况、招生趋势变化</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">政策解读报告、录取大数据分析报告</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        
+                        <!-- 节点5：个人定位与核心需求确认 -->
+                        <div class="graph-node human-node">
+                            <div class="node-icon">✅</div>
+                            <div class="node-title">需求确认</div>
+                            <div class="node-type">人工处理</div>
+                            <div class="node-detail">确认择校定位、核心需求与院校筛选标准</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">最终择校定位、筛选标准</span>
+                            </div>
+                        </div>
+                        
+                        <!-- 循环路径指示 -->
+                        <div class="loop-indicator">
+                            <span class="loop-icon">🔄</span>
+                            <span class="loop-text">支持循环优化：可返回重新评估</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 第二阶段：院校/专业智能匹配与梯度划分 -->
+                <div class="flow-section phase-section" id="zexiao-phase2">
+                    <div class="phase-header">
+                        <div class="phase-badge phase-2">第二阶段</div>
+                        <h3 class="phase-title">院校/专业智能匹配与梯度划分</h3>
+                        <p class="phase-desc">基于个人情况与需求，完成对应赛道的院校智能匹配、多维度数据分析与院校梯度划分</p>
+                    </div>
+                    
+                    <!-- 赛道专属院校库智能匹配 -->
+                    <div class="flow-graph">
+                        <div class="graph-node ai-node main-match">
+                            <div class="node-icon">🎯</div>
+                            <div class="node-title">赛道专属院校库智能匹配</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">基于个人背景、择校定位与核心需求，匹配对应赛道的专属院校库</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">初步院校匹配池</span>
+                            </div>
+                        </div>
+                        
+                        <!-- 四大赛道分支 -->
+                        <div class="branch-container">
+                            <div class="branch-path">
+                                <div class="branch-header">
+                                    <span class="branch-icon">📚</span>
+                                    <span class="branch-title">专升本赛道</span>
+                                </div>
+                                <div class="branch-nodes">
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">📋</div>
+                                        <div class="node-title">本省招生政策匹配</div>
+                                        <div class="node-detail">匹配最新招生政策、院校范围、报考限制</div>
+                                    </div>
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">📈</div>
+                                        <div class="node-title">历年分数线/录取率分析</div>
+                                        <div class="node-detail">拆解分数线、报录比、录取率、位次要求</div>
+                                    </div>
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">📝</div>
+                                        <div class="node-title">考试科目/大纲拆解</div>
+                                        <div class="node-detail">拆解考试科目、大纲、考核重点、题型分值</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="branch-path">
+                                <div class="branch-header">
+                                    <span class="branch-icon">🎓</span>
+                                    <span class="branch-title">考研赛道</span>
+                                </div>
+                                <div class="branch-nodes">
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">🌐</div>
+                                        <div class="node-title">全国院校专业库匹配</div>
+                                        <div class="node-detail">匹配全国范围内符合需求的院校与专业</div>
+                                    </div>
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">📊</div>
+                                        <div class="node-title">报录比/复试线分析</div>
+                                        <div class="node-detail">拆解报录比、复试线、统考名额、推免比例</div>
+                                    </div>
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">📚</div>
+                                        <div class="node-title">专业课考试要求拆解</div>
+                                        <div class="node-detail">拆解考试科目、参考书目、大纲、命题趋势</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="branch-path">
+                                <div class="branch-header">
+                                    <span class="branch-icon">🏛️</span>
+                                    <span class="branch-title">保研赛道</span>
+                                </div>
+                                <div class="branch-nodes">
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">📅</div>
+                                        <div class="node-title">夏令营/预推免政策匹配</div>
+                                        <div class="node-detail">匹配招生政策、报名要求、关键时间节点</div>
+                                    </div>
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">👀</div>
+                                        <div class="node-title">院校录取偏好分析</div>
+                                        <div class="node-detail">拆解录取偏好、生源背景要求、考核侧重点</div>
+                                    </div>
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">🏆</div>
+                                        <div class="node-title">科研/竞赛权重匹配</div>
+                                        <div class="node-detail">匹配科研经历、竞赛奖项、论文成果权重</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="branch-path">
+                                <div class="branch-header">
+                                    <span class="branch-icon">🌍</span>
+                                    <span class="branch-title">留学赛道</span>
+                                </div>
+                                <div class="branch-nodes">
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">🏅</div>
+                                        <div class="node-title">全球院校排名匹配</div>
+                                        <div class="node-detail">匹配全球院校综合排名、专业学科实力</div>
+                                    </div>
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">✅</div>
+                                        <div class="node-title">录取门槛/语言要求分析</div>
+                                        <div class="node-detail">拆解GPA要求、语言成绩、标化考试要求</div>
+                                    </div>
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">📊</div>
+                                        <div class="node-title">申请难度评估</div>
+                                        <div class="node-detail">综合评估申请难度与分级</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 汇总节点 -->
+                        <div class="graph-node ai-node summary-node">
+                            <div class="node-icon">📋</div>
+                            <div class="node-title">院校梯度划分与初步清单生成</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">基于匹配结果、数据分析、难度评估，自动划分冲/稳/保三级梯度</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">带梯度分级的初步择校清单</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 第三阶段：院校筛选与细节确认 -->
+                <div class="flow-section phase-section" id="zexiao-phase3">
+                    <div class="phase-header">
+                        <div class="phase-badge phase-3">第三阶段</div>
+                        <h3 class="phase-title">院校筛选与细节确认</h3>
+                        <p class="phase-desc">完成初步清单的人工筛选、院校细节补充与范围缩小</p>
+                    </div>
+                    
+                    <div class="flow-graph">
+                        <!-- 节点1：初步清单院校/专业筛选 -->
+                        <div class="graph-node human-node">
+                            <div class="node-icon">🔍</div>
+                            <div class="node-title">初步清单筛选</div>
+                            <div class="node-type">人工处理</div>
+                            <div class="node-detail">用户基于AI生成的初步择校清单，完成意向院校与专业的初步筛选</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">筛选后的意向院校/专业清单</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        
+                        <!-- 节点2：院校详细信息补充 -->
+                        <div class="graph-node ai-node">
+                            <div class="node-icon">📝</div>
+                            <div class="node-title">院校详细信息补充</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">针对意向院校，补充导师情况、就业前景、深造率、调档政策等细节</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">意向院校全维度详细信息补充报告</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        
+                        <!-- 节点3：意向院校确认与范围缩小 -->
+                        <div class="graph-node human-node">
+                            <div class="node-icon">🎯</div>
+                            <div class="node-title">范围确认</div>
+                            <div class="node-type">人工处理</div>
+                            <div class="node-detail">用户基于补充的院校详细信息，最终确认核心意向院校，缩小择校范围</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">缩小范围后的核心意向院校清单</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第四阶段：最终择校与清单输出 -->
+                <div class="flow-section phase-section" id="zexiao-phase4">
+                    <div class="phase-header">
+                        <div class="phase-badge phase-4">第四阶段</div>
+                        <h3 class="phase-title">最终择校与清单输出</h3>
+                        <p class="phase-desc">完成最终择校清单的优化、人工审核与最终交付</p>
+                    </div>
+                    
+                    <div class="flow-graph">
+                        <!-- 节点1：最终择校清单优化 -->
+                        <div class="graph-node ai-node">
+                            <div class="node-icon">✨</div>
+                            <div class="node-title">最终择校清单优化</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">针对核心意向院校清单，完成最终优化，标注各院校核心录取要求、备考时间节点</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">优化后的最终版择校清单草稿</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        
+                        <!-- 节点2：最终清单审核确认 -->
+                        <div class="graph-node human-node">
+                            <div class="node-icon">✅</div>
+                            <div class="node-title">最终清单审核确认</div>
+                            <div class="node-type">人工处理</div>
+                            <div class="node-detail">用户对AI优化后的最终择校清单草稿完成审核，确认最终目标院校与专业</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">审核确认后的最终目标院校/专业清单</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        
+                        <!-- 节点3：项目完成 -->
+                        <div class="graph-node end-node">
+                            <div class="node-icon">🏁</div>
+                            <div class="node-title">项目完成</div>
+                            <div class="node-type">流程收尾</div>
+                            <div class="node-detail">完成最终择校清单的交付，包含冲/稳/保梯度、录取核心要求、课设与就业说明</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">最终交付的目标院校/专业清单</span>
+                            </div>
+                        </div>
+                        
+                        <!-- 循环路径指示 -->
+                        <div class="loop-indicator">
+                            <span class="loop-icon">🔄</span>
+                            <span class="loop-text">支持循环优化：可返回重新筛选</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 生态联动入口 -->
+                    <div class="eco-link-section">
+                        <a class="eco-link" href="engines.html#zhitu" data-target="zhitu" data-key="schools">
+                            <span>同步院校至职途创</span>
+                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 立即体验按钮 -->
+                <div class="final-action-section">
+                    <button class="final-experience-btn" data-experience="school-choice">🚀 立即生成专属择校方案</button>
+                </div>
+            </div>
+
+            <!-- 升学创·分赛道备考辅导 -->
+            <div class="flow-panel" id="flow-beikao">
+                <!-- 备考辅导总览 -->
+                <div class="flow-overview-section">
+                    <div class="overview-card">
+                        <div class="overview-header">
+                            <h2 class="overview-title">📚 升学创·分赛道备考辅导全流程</h2>
+                            <div class="overview-stats">
+                                <div class="stat-card">
+                                    <span class="stat-num">5</span>
+                                    <span class="stat-desc">备考阶段</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-num">12</span>
+                                    <span class="stat-desc">核心节点</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-num">4</span>
+                                    <span class="stat-desc">赛道路径</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-num">24h</span>
+                                    <span class="stat-desc">AI伴学</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phase-progress">
+                            <div class="phase-item active">
+                                <span class="phase-num">01</span>
+                                <span class="phase-name">基础测评</span>
+                            </div>
+                            <div class="phase-connector"></div>
+                            <div class="phase-item">
+                                <span class="phase-num">02</span>
+                                <span class="phase-name">计划制定</span>
+                            </div>
+                            <div class="phase-connector"></div>
+                            <div class="phase-item">
+                                <span class="phase-num">03</span>
+                                <span class="phase-name">学习执行</span>
+                            </div>
+                            <div class="phase-connector"></div>
+                            <div class="phase-item">
+                                <span class="phase-num">04</span>
+                                <span class="phase-name">测评优化</span>
+                            </div>
+                            <div class="phase-connector"></div>
+                            <div class="phase-item">
+                                <span class="phase-num">05</span>
+                                <span class="phase-name">考前冲刺</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第一阶段：基础测评与赛道分析 -->
+                <div class="flow-section phase-section" id="beikao-phase1">
+                    <div class="phase-header">
+                        <div class="phase-badge phase-1">第一阶段</div>
+                        <h3 class="phase-title">基础测评与赛道分析</h3>
+                        <p class="phase-desc">完成考生基础水平测评，分析目标赛道特点，为后续学习计划制定提供依据</p>
+                    </div>
+                    <div class="flow-graph">
+                        <div class="graph-node ai-node">
+                            <div class="node-icon">🧪</div>
+                            <div class="node-title">基础水平智能测评</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">根据目标赛道考纲，完成多维度基础水平测评，精准定位知识薄弱点</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">基础水平报告、知识点掌握图谱、薄弱点分析</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        <div class="graph-node ai-node">
+                            <div class="node-icon">🎯</div>
+                            <div class="node-title">目标赛道考纲解析</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">深度解析目标赛道考试大纲、题型分布、分值权重、命题趋势</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">考纲解读报告、题型分析、命题趋势预测</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        <div class="graph-node human-node">
+                            <div class="node-icon">✅</div>
+                            <div class="node-title">测评结果确认</div>
+                            <div class="node-type">人工处理</div>
+                            <div class="node-detail">考生确认测评结果，明确备考目标与期望达成时间</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">备考目标确认书、时间规划表</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第二阶段：个性化学习计划制定 -->
+                <div class="flow-section phase-section" id="beikao-phase2">
+                    <div class="phase-header">
+                        <div class="phase-badge phase-2">第二阶段</div>
+                        <h3 class="phase-title">个性化学习计划制定</h3>
+                        <p class="phase-desc">基于测评结果，制定科学合理的个性化备考方案</p>
+                    </div>
+                    <div class="flow-graph">
+                        <div class="graph-node ai-node">
+                            <div class="node-icon">📋</div>
+                            <div class="node-title">学习计划智能生成</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">根据基础水平、备考时间、目标院校要求，生成阶段性学习计划</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">阶段性学习计划、每日任务清单、周目标分解</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        <div class="graph-node human-node">
+                            <div class="node-icon">👨‍🏫</div>
+                            <div class="node-title">专家审核与调整</div>
+                            <div class="node-type">人工处理</div>
+                            <div class="node-detail">专业顾问审核AI生成计划，根据考生实际情况进行个性化调整</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">优化后的学习计划、专家建议说明</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第三阶段：分阶段学习与AI伴学辅导 -->
+                <div class="flow-section phase-section" id="beikao-phase3">
+                    <div class="phase-header">
+                        <div class="phase-badge phase-3">第三阶段</div>
+                        <h3 class="phase-title">分阶段学习与AI伴学辅导</h3>
+                        <p class="phase-desc">按照学习计划进行系统学习，AI全程伴学答疑</p>
+                    </div>
+                    <div class="flow-graph">
+                        <div class="branch-container">
+                            <div class="branch-path">
+                                <div class="branch-header">
+                                    <span class="branch-icon">📚</span>
+                                    <span class="branch-title">专升本备考</span>
+                                </div>
+                                <div class="branch-nodes">
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">📖</div>
+                                        <div class="node-title">公共课精讲</div>
+                                        <div class="node-detail">高数、英语、计算机基础系统精讲</div>
+                                    </div>
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">📝</div>
+                                        <div class="node-title">专业课强化</div>
+                                        <div class="node-detail">专业核心课程深度讲解</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="branch-path">
+                                <div class="branch-header">
+                                    <span class="branch-icon">🎓</span>
+                                    <span class="branch-title">考研备考</span>
+                                </div>
+                                <div class="branch-nodes">
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">🧮</div>
+                                        <div class="node-title">数学/政治精讲</div>
+                                        <div class="node-detail">公共课系统学习与训练</div>
+                                    </div>
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">📚</div>
+                                        <div class="node-title">专业课深挖</div>
+                                        <div class="node-detail">目标院校专业课深度剖析</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="branch-path">
+                                <div class="branch-header">
+                                    <span class="branch-icon">🏛️</span>
+                                    <span class="branch-title">保研备考</span>
+                                </div>
+                                <div class="branch-nodes">
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">📊</div>
+                                        <div class="node-title">材料准备指导</div>
+                                        <div class="node-detail">简历、个人陈述优化指导</div>
+                                    </div>
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">💬</div>
+                                        <div class="node-title">面试技巧训练</div>
+                                        <div class="node-detail">保研面试高频问题与应对</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="branch-path">
+                                <div class="branch-header">
+                                    <span class="branch-icon">🌍</span>
+                                    <span class="branch-title">留学备考</span>
+                                </div>
+                                <div class="branch-nodes">
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">🔤</div>
+                                        <div class="node-title">语言考试训练</div>
+                                        <div class="node-detail">托福/雅思/GRE备考指导</div>
+                                    </div>
+                                    <div class="graph-node ai-node small">
+                                        <div class="node-icon">📝</div>
+                                        <div class="node-title">文书写作指导</div>
+                                        <div class="node-detail">PS、CV、推荐信写作</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 共性AI伴学节点 -->
+                        <div class="graph-node ai-node main-match">
+                            <div class="node-icon">🤖</div>
+                            <div class="node-title">AI智能答疑与进度追踪</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">24小时AI答疑、学习进度实时追踪、薄弱点智能提醒</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">答疑记录、学习进度报告、效率分析</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第四阶段：阶段测评与动态优化 -->
+                <div class="flow-section phase-section" id="beikao-phase4">
+                    <div class="phase-header">
+                        <div class="phase-badge phase-4">第四阶段</div>
+                        <h3 class="phase-title">阶段测评与动态优化</h3>
+                        <p class="phase-desc">定期进行阶段测评，根据结果动态调整学习计划</p>
+                    </div>
+                    <div class="flow-graph">
+                        <div class="graph-node ai-node">
+                            <div class="node-icon">📊</div>
+                            <div class="node-title">阶段测试智能评估</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">AI智能分析阶段测试结果，精准定位知识点掌握情况</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">阶段测评报告、错题分析、知识点掌握图谱</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        <div class="graph-node human-node">
+                            <div class="node-icon">🎯</div>
+                            <div class="node-title">学习计划动态调整</div>
+                            <div class="node-type">人工处理</div>
+                            <div class="node-detail">专业顾问根据测评结果，提供个性化学习计划调整建议</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">调整后的学习计划、薄弱点突破策略</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第五阶段：考前冲刺与全真模考 -->
+                <div class="flow-section phase-section" id="beikao-phase5">
+                    <div class="phase-header">
+                        <div class="phase-badge phase-4">第五阶段</div>
+                        <h3 class="phase-title">考前冲刺与全真模考</h3>
+                        <p class="phase-desc">完成全真模拟考试，进行最后冲刺准备</p>
+                    </div>
+                    <div class="flow-graph">
+                        <div class="graph-node ai-node">
+                            <div class="node-icon">🖥️</div>
+                            <div class="node-title">全真模拟考试</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">全真模拟考试环境，AI智能评分，还原真实考试体验</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">模拟试卷、智能评分报告、错题分析</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        <div class="graph-node human-node">
+                            <div class="node-icon">🏃</div>
+                            <div class="node-title">冲刺策略与押题指导</div>
+                            <div class="node-type">人工处理</div>
+                            <div class="node-detail">专业顾问提供最后冲刺策略、押题方向指导、心理调适建议</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">冲刺方案、押题重点、心理辅导</span>
+                            </div>
+                        </div>
+                        <div class="graph-connector"></div>
+                        <div class="graph-node ai-node">
+                            <div class="node-icon">🧘</div>
+                            <div class="node-title">考前心理调适</div>
+                            <div class="node-type">AI处理</div>
+                            <div class="node-detail">AI提供考前心理调适指导，缓解压力，保持最佳状态</div>
+                            <div class="node-output">
+                                <span class="output-label">输出：</span>
+                                <span class="output-text">心理调适方案、放松技巧、压力管理</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 立即体验按钮 -->
+                <div class="final-action-section">
+                    <button class="final-experience-btn" data-experience="exam-prep">📚 立即生成专属备考计划</button>
+                </div>
+                                        <span class="output-content">应急预案、突发应对方案、后勤保障</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="exam-prep">生成专属备考计划</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🛡️</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- 升学创·背景提升与材料制作 -->
+            <div class="flow-panel" id="flow-beijing">
+                <div class="flow-section" id="beijing-step1">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">01</div>
+                            <h3 class="step-title">背景竞争力评估与短板定位</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">个人背景综合评估</h4>
+                                    <p class="item-description">AI综合评估学历背景、成绩单、社会实践、科研经历等背景竞争力</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">背景评估报告、竞争力分析、优势短板定位</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">短板分析与提升建议</h4>
+                                    <p class="item-description">专业顾问深入分析背景短板，提供针对性提升建议与路径规划</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">个性化提升方案、背景优化路径</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="material-opt">一键优化升学申请材料</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🎯</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="beijing-step2">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">02</div>
+                            <h3 class="step-title">分赛道资源联动与提升路径规划</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">科研竞赛资源智能匹配</h4>
+                                    <p class="item-description">AI根据背景短板智能匹配适合的科研项目、竞赛机会</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">科研项目推荐、竞赛清单、资源匹配方案</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">背景提升方案制定</h4>
+                                    <p class="item-description">专业顾问结合考生目标与实际情况，制定系统化背景提升方案</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">背景提升规划、时间节点安排</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="material-opt">一键优化升学申请材料</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🚀</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="beijing-step3">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">03</div>
+                            <h3 class="step-title">申请材料框架搭建与内容生成</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">个人陈述智能撰写</h4>
+                                    <p class="item-description">AI根据考生背景与目标专业，智能撰写个性化个人陈述</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">个人陈述初稿、优化建议</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">简历智能优化</h4>
+                                    <p class="item-description">AI智能优化简历内容、结构、措辞，提升简历竞争力</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">优化简历终稿、简历评分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="material-opt">一键优化升学申请材料</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">📄</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="beijing-step4">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">04</div>
+                            <h3 class="step-title">材料精细化打磨与合规校验</h3>
+                            <div class="flow-items">
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">专业文书润色</h4>
+                                    <p class="item-description">专业文案团队对申请文书进行精细化润色，确保语言地道、表达精准</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">专业润色、表达优化</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">合规性智能检查</h4>
+                                    <p class="item-description">AI自动检查申请材料合规性，确保符合目标院校要求</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">合规检查报告、问题清单</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="material-opt">一键优化升学申请材料</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">✨</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="beijing-step5">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">05</div>
+                            <h3 class="step-title">终稿输出与面试准备</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">材料终稿整理输出</h4>
+                                    <p class="item-description">AI整合所有材料，生成规范的终稿文件包，方便提交</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">完整申请材料包、终稿PDF</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">面试技巧指导</h4>
+                                    <p class="item-description">专业顾问提供面试技巧指导、常见问题应答策略</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">面试指南、应答策略、一对一模拟</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="material-opt">一键优化升学申请材料</button>
+                                <a class="eco-link" href="engines.html#yansai" data-target="yansai" data-key="materials">
+                                    <span>同步研赛创科创成果</span>
+                                    <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🎯</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- 升学创·面试全真模拟 -->
+            <div class="flow-panel" id="flow-mianshi">
+                <div class="flow-section" id="mianshi-step1">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">01</div>
+                            <h3 class="step-title">面试信息分析与考点预判</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">院校面试风格智能分析</h4>
+                                    <p class="item-description">AI分析目标院校面试风格、历年真题、高频考点</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">面试分析报告、考点预测</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">面试考点专业解析</h4>
+                                    <p class="item-description">专业顾问深度解析面试考点、应答思路、注意事项</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">专业解析、应答策略</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="interview-sim">立即开启全真面试模拟</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🎯</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="mianshi-step2">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">02</div>
+                            <h3 class="step-title">全场景模拟面试与多维度评审</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">AI面试官模拟</h4>
+                                    <p class="item-description">AI模拟真实面试场景，支持多种面试类型，还原真实面试体验</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">模拟面试记录、实时评估</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">专业面试点评</h4>
+                                    <p class="item-description">专业面试官提供多维度点评，精准指出问题与改进方向</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">专业点评、个性化建议</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="interview-sim">立即开启全真面试模拟</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🎤</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="mianshi-step3">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">03</div>
+                            <h3 class="step-title">评审意见整合与失分点拆解</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">智能分析失分点定位</h4>
+                                    <p class="item-description">AI智能分析面试表现，精准定位失分点与提升空间</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">失分点分析报告、能力雷达图</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">专业改进建议</h4>
+                                    <p class="item-description">专业顾问针对失分点提供具体改进建议与练习方向</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">改进方案、练习重点</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="interview-sim">立即开启全真面试模拟</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">📊</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="mianshi-step4">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">04</div>
+                            <h3 class="step-title">针对性优化与专项训练</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">专项训练智能生成</h4>
+                                    <p class="item-description">根据失分点智能生成针对性训练内容，反复练习巩固</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">训练计划、练习题库</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">一对一专项指导</h4>
+                                    <p class="item-description">专业顾问一对一指导，针对性突破面试难点</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">专项指导、难点突破</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="interview-sim">立即开启全真面试模拟</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🎯</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="mianshi-step5">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">05</div>
+                            <h3 class="step-title">综合反馈报告输出</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">综合评估报告生成</h4>
+                                    <p class="item-description">AI生成综合评估报告，全面呈现面试表现与提升建议</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">综合评估报告、改进路径图</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">最终总结与建议</h4>
+                                    <p class="item-description">专业顾问提供最终总结与考前冲刺建议</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">考前建议、注意事项</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="interview-sim">立即开启全真面试模拟</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">📋</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- 研赛创·科研辅助 -->
+            <div class="flow-panel" id="flow-keyan2">
+                <div class="flow-section" id="keyan2-step1">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">01</div>
+                            <h3 class="step-title">学术论文全流程AI辅助</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">文献智能检索与综述生成</h4>
+                                    <p class="item-description">AI智能检索相关文献，自动生成文献综述，节省大量时间</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">文献清单、文献综述初稿</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">论文结构与内容智能生成</h4>
+                                    <p class="item-description">AI根据研究内容智能生成论文框架与内容，支持多种学术格式</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">论文大纲、章节内容初稿</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="paper-gen">生成论文初稿</button>
+                                <a class="eco-link" href="engines.html#shengxue" data-target="shengxue" data-key="research">
+                                    <span>同步至升学创背景提升</span>
+                                    <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">📚</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="keyan2-step2">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">02</div>
+                            <h3 class="step-title">专利申报全流程AI辅助</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">专利申请文件智能生成</h4>
+                                    <p class="item-description">AI根据技术方案自动生成专利申请书、权利要求书等文件</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">专利申请书、说明书、权利要求书</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">专利申请流程专业指导</h4>
+                                    <p class="item-description">专利代理人提供专业申请指导，确保申请顺利通过</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">专业指导、申请策略、流程跟进</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="patent-gen">专利申报方案生成</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🔬</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="keyan2-step3">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">03</div>
+                            <h3 class="step-title">科研项目全维度评审优化</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">项目可行性智能评估</h4>
+                                    <p class="item-description">AI从多维度评估科研项目可行性，识别风险点与优化空间</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">可行性分析报告、风险评估</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">专业评审意见</h4>
+                                    <p class="item-description">领域专家提供专业评审意见与改进建议</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">专家意见、改进方案</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="project-review">项目评审优化</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">📋</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="keyan2-step4">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">04</div>
+                            <h3 class="step-title">科研成果商业/竞赛价值转化</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">成果价值智能分析</h4>
+                                    <p class="item-description">AI智能分析科研成果的商业价值与竞赛潜力</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">价值分析报告、转化建议</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">转化方案制定</h4>
+                                    <p class="item-description">专业顾问制定科研成果转化方案，对接商业与竞赛资源</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">转化方案、资源对接</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="result-transform">成果转化方案定制</button>
+                                <a class="eco-link" href="engines.html#shengxue" data-target="shengxue" data-key="research">
+                                    <span>同步至升学创背景提升</span>
+                                    <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🚀</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- 研赛创·竞赛备赛 -->
+            <div class="flow-panel" id="flow-jingsai2">
+                <div class="flow-section" id="jingsai2-step1">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">01</div>
+                            <h3 class="step-title">商业计划书AI全流程撰写</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">商业计划智能生成</h4>
+                                    <p class="item-description">AI智能生成完整商业计划书，包括市场分析、商业模式、财务预测等</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">完整商业计划书、PPT版本</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">专业指导优化</h4>
+                                    <p class="item-description">专业导师对商业计划进行深度优化，提升竞争力</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">专业优化意见、竞争力提升</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="bp-write">商业计划书撰写</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">📄</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="jingsai2-step2">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">02</div>
+                            <h3 class="step-title">路演PPT智能生成与优化</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">PPT智能设计与美化</h4>
+                                    <p class="item-description">AI智能设计路演PPT，自动排版、美化，提升视觉效果</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">专业路演PPT、动态效果</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">专业设计指导</h4>
+                                    <p class="item-description">专业设计师提供设计建议，优化PPT呈现效果</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">设计优化、视觉提升</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="ppt-gen">路演PPT生成</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🎬</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="jingsai2-step3">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">03</div>
+                            <h3 class="step-title">路演演讲稿全流程AI辅助</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">演讲稿智能生成</h4>
+                                    <p class="item-description">AI根据项目内容智能生成演讲稿，逻辑清晰、重点突出</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">完整演讲稿、时间提示</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">演讲技巧指导</h4>
+                                    <p class="item-description">AI提供演讲技巧指导，包括语速、语调、肢体语言等</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">技巧指南、练习建议</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="speech-write">演讲稿撰写</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🎤</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="jingsai2-step4">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">04</div>
+                            <h3 class="step-title">竞赛项目全维度AI评审与模拟答辩</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">模拟答辩与智能点评</h4>
+                                    <p class="item-description">AI模拟真实答辩场景，实时点评，提升答辩能力</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">模拟答辩记录、点评报告</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">专业评审意见</h4>
+                                    <p class="item-description">专家评审团提供专业评审意见与改进建议</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">专业评审、改进方向</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="demo-review">模拟答辩</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🎯</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- 研赛创·创新创业 -->
+            <div class="flow-panel" id="flow-chuangye2">
+                <div class="flow-section" id="chuangye2-step1">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">01</div>
+                            <h3 class="step-title">创业项目从0到1全流程AI孵化</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">创业想法智能梳理</h4>
+                                    <p class="item-description">AI智能梳理创业想法，验证商业模式，市场定位分析</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">商业模式画布、市场分析报告</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">创业导师一对一指导</h4>
+                                    <p class="item-description">资深创业导师提供一对一指导，梳理创业方向与路径</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">专业指导、方向规划</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="startup-incubate">创业项目孵化</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🚀</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="chuangye2-step2">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">02</div>
+                            <h3 class="step-title">创业项目商业闭环验证与合规落地</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">商业模式智能验证</h4>
+                                    <p class="item-description">AI验证商业模式可行性，分析盈利模型与市场接受度</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">商业验证报告、风险评估</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">合规落地指导</h4>
+                                    <p class="item-description">专业团队提供工商注册、税务合规等全方位指导</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">合规方案、注册指导</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="biz-verify">商业闭环验证</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">📈</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="chuangye2-step3">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">03</div>
+                            <h3 class="step-title">竞赛/科研成果创业转化</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">成果价值智能评估</h4>
+                                    <p class="item-description">AI评估科研成果或竞赛项目的商业化价值与转化潜力</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">价值评估报告、转化路径图</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">转化路径规划</h4>
+                                    <p class="item-description">专业顾问规划科研成果向商业产品转化的具体路径</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">转化方案、资源对接</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="result-transform">成果转化</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🔬</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="chuangye2-step4">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">04</div>
+                            <h3 class="step-title">创业项目全维度评审与投融资对接</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">投资机构智能匹配</h4>
+                                    <p class="item-description">AI根据项目特点智能匹配适合的投资机构与投资人</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">投资机构清单、匹配分析</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">投融资对接服务</h4>
+                                    <p class="item-description">专业团队提供投融资对接服务，协助谈判与融资</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">融资对接、商业谈判</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="invest-match">投融资对接</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">💰</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="chuangye2-step5">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">05</div>
+                            <h3 class="step-title">创业项目全流程孵化</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">创业资源智能对接</h4>
+                                    <p class="item-description">AI智能匹配创业所需的各种资源，包括人才、技术、渠道等</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">资源清单、对接方案</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">全流程跟踪服务</h4>
+                                    <p class="item-description">专业团队提供全流程跟踪服务，及时解决问题</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">全程跟踪、问题解决</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="startup-incubate">创业孵化</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🏢</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- 职途创·市场化就业 -->
+            <div class="flow-panel" id="flow-shichang2">
+                <div class="flow-section" id="shichang2-step1">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">01</div>
+                            <h3 class="step-title">职业综合测评与赛道分流</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">职业性格智能测评</h4>
+                                    <p class="item-description">AI通过专业测评工具分析职业性格、兴趣、能力匹配度</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">职业性格报告、能力雷达图</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">职业发展路径规划</h4>
+                                    <p class="item-description">专业顾问结合测评结果与市场情况，规划职业发展路径</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">职业规划、赛道推荐</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="career-test">职业测评</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🎯</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="shichang2-step2">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">02</div>
+                            <h3 class="step-title">个人条件研判与智能岗位匹配</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">岗位智能匹配</h4>
+                                    <p class="item-description">AI根据个人背景与岗位要求，智能匹配最适合的职位</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">匹配岗位清单、匹配度评分</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">个人竞争力分析</h4>
+                                    <p class="item-description">AI分析个人竞争力，识别优势与短板，提出提升建议</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">竞争力分析报告、提升建议</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="job-match">智能岗位匹配</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">💼</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="shichang2-step3">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">03</div>
+                            <h3 class="step-title">企业招聘政策解读与信息梳理</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">招聘信息智能分析</h4>
+                                    <p class="item-description">AI智能分析企业招聘政策、岗位要求、薪资待遇等</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">招聘信息分析报告、企业对比</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">政策解读指导</h4>
+                                    <p class="item-description">专业顾问解读招聘政策，提供求职策略建议</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">政策解读、求职策略</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="policy-parse">招聘政策解读</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">📋</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="shichang2-step4">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">04</div>
+                            <h3 class="step-title">求职材料梳理与科创成果转化</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">简历智能优化</h4>
+                                    <p class="item-description">AI智能优化简历内容、结构、措辞，提升简历竞争力</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">优化简历终稿、简历评分</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">成果转化为就业竞争力</h4>
+                                    <p class="item-description">专业顾问将科创成果（论文、专利、竞赛等）转化为简历亮点</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">成果包装、竞争力提升</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="resume-opt">简历优化</button>
+                                <a class="eco-link" href="engines.html#yansai" data-target="yansai" data-key="achievements">
+                                    <span>同步研赛创科创成果</span>
+                                    <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">📄</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="shichang2-step5">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">05</div>
+                            <h3 class="step-title">校企对接笔试面试与入职护航</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">面试模拟与指导</h4>
+                                    <p class="item-description">AI模拟真实面试场景，提供针对性指导与反馈</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">模拟面试记录、改进建议</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">校企对接服务</h4>
+                                    <p class="item-description">专业团队对接校企资源，协助笔试面试，入职后跟踪服务</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">全程跟进、顺利入职</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="campus-recruit">校企对接</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🤝</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- 职途创·体制内招录 -->
+            <div class="flow-panel" id="flow-tizhi2">
+                <div class="flow-section" id="tizhi2-step1">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">01</div>
+                            <h3 class="step-title">报考意向自主选定</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">岗位类型智能分析</h4>
+                                    <p class="item-description">AI分析各类体制内岗位的特点、发展前景、竞争程度</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">岗位分析报告、类型推荐</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">报考建议智能推荐</h4>
+                                    <p class="item-description">AI根据个人背景与岗位情况，智能推荐最适合的报考岗位</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">岗位推荐清单、报考策略</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="exam-consult">报考咨询</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">🎯</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="tizhi2-step2">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">02</div>
+                            <h3 class="step-title">招录政策适配与岗位筛选</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">政策智能解读</h4>
+                                    <p class="item-description">AI智能解读各地招录政策，筛选符合条件的岗位</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">政策解读报告、可选岗位清单</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">岗位筛选指导</h4>
+                                    <p class="item-description">专业顾问根据个人意愿与竞争情况，指导最优岗位选择</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">岗位分析、选择建议</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="job-filter">岗位筛选</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">📋</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="tizhi2-step3">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">03</div>
+                            <h3 class="step-title">分阶段备考规划与能力提升</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">备考计划智能生成</h4>
+                                    <p class="item-description">AI根据报考岗位要求与个人情况，生成个性化备考计划</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">阶段备考计划、每日任务清单</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">学习资料智能推荐</h4>
+                                    <p class="item-description">AI智能推荐适合的学习资料与练习题库</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">学习资料包、题库精选</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="exam-plan">备考规划</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">📚</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-section" id="tizhi2-step4">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left">
+                            <div class="step-number">04</div>
+                            <h3 class="step-title">资格复审与政审体检全流程指引</h3>
+                            <div class="flow-items">
+                                <div class="flow-item ai">
+                                    <div class="item-badge ai-badge">AI</div>
+                                    <h4 class="item-title">流程智能提醒</h4>
+                                    <p class="item-description">AI智能提醒各阶段时间节点与所需材料，避免错过重要环节</p>
+                                    <div class="item-output">
+                                        <span class="output-label">输出：</span>
+                                        <span class="output-content">时间节点表、材料清单</span>
+                                    </div>
+                                </div>
+                                <div class="flow-item human">
+                                    <div class="item-badge human-badge">人工</div>
+                                    <h4 class="item-title">全流程指导</h4>
+                                    <p class="item-description">专业顾问提供资格复审、政审体检全流程专业指导</p>
+                                    <div class="item-output">
+                                        <span class="output-label">价值：</span>
+                                        <span class="output-content">全程指导、问题解答</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="step-experience-btn" data-experience="process-guide">流程指导</button>
+                            </div>
+                        </div>
+                        <div class="flow-step-right">
+                            <div class="step-visual">
+                                <div class="visual-icon">✅</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- 引擎生态联动区 -->
+        <section class="ecosystem-linkage-section" id="ecosystem-linkage">
+            <div class="ecosystem-linkage-container">
+                <div class="ecosystem-prev-link" id="ecosystemPrevLink">
+                    <div class="ecosystem-link-card">
+                        <div class="link-arrow">←</div>
+                        <h4 id="prevEngineName">研赛创</h4>
+                        <p id="prevEngineDesc">科研成果转化，助力升学背景提升</p>
+                        <a href="#yansai" class="link-btn" id="prevEngineBtn">前往研赛创</a>
+                    </div>
+                </div>
+                <div class="ecosystem-chain-visual">
+                    <div class="chain-item">研赛创</div>
+                    <div class="chain-arrow">→</div>
+                    <div class="chain-item active">升学创</div>
+                    <div class="chain-arrow">→</div>
+                    <div class="chain-item">职途创</div>
+                </div>
+                <div class="ecosystem-next-link" id="ecosystemNextLink">
+                    <div class="ecosystem-link-card">
+                        <div class="link-arrow">→</div>
+                        <h4 id="nextEngineName">职途创</h4>
+                        <p id="nextEngineDesc">从升学背景到就业竞争力，无缝衔接</p>
+                        <a href="#zhitu" class="link-btn" id="nextEngineBtn">前往职途创</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 底部转化CTA区 -->
+        <section class="engine-cta-section" id="cta-section">
+            <div class="cta-container">
+                <h2 class="cta-title">开启你的AI赋能之旅</h2>
+                <p class="cta-desc">楚创通，让每一步升学都更加清晰、高效、精准</p>
+                <div class="cta-buttons">
+                    <a href="login.html" class="btn-cta-primary">立即体验</a>
+                    <a href="contact.html" class="btn-cta-outline">合作咨询</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 动画层级控制按钮 -->
+    <button class="animation-toggle-btn" id="animationToggle">增强动效</button>
+
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于楚创通</h4>
+                    <p>楚创通致力于为高校学生提供AI驱动的全周期生涯规划服务，让成长之路更加清晰、高效。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>核心引擎</h4>
+                    <ul>
+                        <li><a href="engines.html#shengxue">升学创引擎</a></li>
+                        <li><a href="engines.html#yansai">研赛创引擎</a></li>
+                        <li><a href="engines.html#zhitu">职途创引擎</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>了解更多</h4>
+                    <ul>
+                        <li><a href="solutions.html">解决方案</a></li>
+                        <li><a href="cases.html">落地成果</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <p>📧 support@chuangtong.com</p>
+                    <p>📞 400-123-4567</p>
+                    <p>🕐 周一至周五 9:00-18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 楚创通. 保留所有权利. | 京ICP备12345678号-1</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 体验抽屉面板 -->
+    <div class="experience-drawer-overlay" id="experienceOverlay">
+        <div class="experience-drawer" id="experienceDrawer">
+            <div class="drawer-header">
+                <h3 class="drawer-title" id="drawerTitle">快速体验</h3>
+                <button class="drawer-close" id="drawerClose">
+                    <span>×</span>
+                </button>
+            </div>
+            <div class="drawer-content" id="drawerContent">
+                <!-- 体验内容将由JS动态生成 -->
+            </div>
+            <div class="drawer-footer">
+                <div class="drawer-result-actions" id="drawerResultActions" style="display: none;">
+                    <button class="result-btn copy-btn" id="copyResultBtn">
+                        <span class="btn-icon">📋</span>
+                        <span>一键复制</span>
+                    </button>
+                    <button class="result-btn export-btn" id="exportResultBtn">
+                        <span class="btn-icon">📄</span>
+                        <span>导出PDF</span>
+                    </button>
+                    <button class="result-btn qrcode-btn" id="qrcodeResultBtn">
+                        <span class="btn-icon">📱</span>
+                        <span>扫码保存</span>
+                    </button>
+                </div>
+                <div class="drawer-bottom-actions">
+                    <button class="drawer-btn secondary" id="drawerContinueBtn">继续浏览</button>
+                    <a href="login.html" class="drawer-btn primary" id="drawerFullExperienceBtn">前往完整功能</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
