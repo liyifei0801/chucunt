@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>楚创通 - 大学生全周期生涯规划多模态AI平台</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 模块1：顶部固定悬浮导航栏 -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html" class="brand-logo">
+                    <span class="logo-icon">🚀</span>
+                    <div class="logo-text">
+                        <span class="logo-title">楚创通</span>
+                        <span class="logo-subtitle">大学生全周期生涯规划多模态AI平台</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">首页</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
+                    <li class="nav-item"><a href="solutions.html" class="nav-link">解决方案</a></li>
+                    <li class="nav-item"><a href="engines.html" class="nav-link">核心引擎</a></li>
+                    <li class="nav-item"><a href="cases.html" class="nav-link">落地成果</a></li>
+                    <li class="nav-item"><a href="ecosystem.html" class="nav-link">合作生态</a></li>
+                    <li class="nav-item"><a href="index.html#team" class="nav-link">核心团队</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="login.html" class="btn-primary-gradient">立即体验</a>
+                <a href="contact.html" class="btn-outline-primary">合作咨询</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 三大引擎Tab栏 -->
+    <div class="engine-tabs-bar" id="engineTabsBar">
+        <div class="tabs-bar-container">
+            <div class="engine-tabs-wrapper">
+                <a href="shengxuechuang.html" class="engine-tab-item" data-engine="shengxue">
+                    <span class="tab-icon">📚</span>
+                    <span class="tab-name">升学创</span>
+                    <span class="tab-desc">进阶引擎</span>
+                </a>
+                <a href="yansaichuang.html" class="engine-tab-item" data-engine="yansai">
+                    <span class="tab-icon">🔬</span>
+                    <span class="tab-name">研赛创</span>
+                    <span class="tab-desc">循环引擎</span>
+                </a>
+                <a href="zhituchuang.html" class="engine-tab-item" data-engine="zhitu">
+                    <span class="tab-icon">💼</span>
+                    <span class="tab-name">职途创</span>
+                    <span class="tab-desc">护航引擎</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模块2：首屏Hero核心转化区 -->
+    <section class="hero-section">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+
+                <h1 class="hero-title">楚创通 · 大学生全周期生涯规划AI平台</h1>
+                <h2 class="hero-subtitle">以AI赋能生涯路，共育时代栋梁才</h2>
+                <p class="hero-desc">国内首个打通学生—高校—企业—政府四方闭环，覆盖升学、科创、就业全场景的多模态AI生涯服务平台</p>
+                <div class="hero-buttons">
+                    <a href="login.html" class="btn-hero-primary">立即体验</a>
+                    <a href="contact.html" class="btn-hero-outline">合作咨询</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card-glass">
+                        <span class="stat-value">42.8%</span>
+                        <span class="stat-label">ATS简历初筛通过率提升</span>
+                    </div>
+                    <div class="stat-card-glass">
+                        <span class="stat-value">85%</span>
+                        <span class="stat-label">人岗匹配精准度</span>
+                    </div>
+                    <div class="stat-card-glass">
+                        <span class="stat-value">2所</span>
+                        <span class="stat-label">深度合作高校</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual"></div>
+        </div>
+    </section>
+
+    <!-- 模块3：核心产品三大引擎Tab导航区 -->
+    <section class="engines-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">核心产品</h2>
+                <p class="section-subtitle">三大自研AI引擎，覆盖大学生成长全周期</p>
+            </div>
+            <div class="tab-nav">
+                <button class="tab-item active" data-tab="shengxue">升学创 · 全周期升学规划智能引擎</button>
+                <button class="tab-item" data-tab="yansai">研赛创 · 科创成果转化智能闭环引擎</button>
+                <button class="tab-item" data-tab="zhitu">职途创 · 人-岗-企-校四维智能匹配引擎</button>
+            </div>
+            
+            <!-- 升学创内容 -->
+            <a href="shengxuechuang.html" class="engine-detail-card active" id="engine-shengxue">
+                <div class="engine-detail-left">
+                    <h3 class="engine-name">升学创 · 你的专属升学规划AI导师</h3>
+                    <div class="engine-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">🎯</span>
+                            <span class="feature-text">院校智能匹配</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📅</span>
+                            <span class="feature-text">全周期备考规划</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📈</span>
+                            <span class="feature-text">背景提升定制</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✍️</span>
+                            <span class="feature-text">文书优化</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🎬</span>
+                            <span class="feature-text">复试全真模拟</span>
+                        </div>
+                    </div>
+                    <div class="engine-value">
+                        <p>覆盖专升本、考研、保研、留学全赛道</p>
+                        <p>院校匹配精准度达90%以上</p>
+                        <p>复试模拟评分与院校实际面试相关性达0.85以上</p>
+                    </div>
+                </div>
+                <div class="engine-detail-right">
+                    <div class="engine-mockup">
+                        <div class="mockup-placeholder">升学规划界面</div>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- 研赛创内容 -->
+            <a href="yansaichuang.html" class="engine-detail-card" id="engine-yansai">
+                <div class="engine-detail-left">
+                    <h3 class="engine-name">研赛创 · 科研竞赛创新闭环引擎</h3>
+                    <div class="engine-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">🔬</span>
+                            <span class="feature-text">创新创业孵化</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🏆</span>
+                            <span class="feature-text">学科竞赛辅导</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📝</span>
+                            <span class="feature-text">科研论文辅助</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">💡</span>
+                            <span class="feature-text">创新点提炼</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">💰</span>
+                            <span class="feature-text">融资对接服务</span>
+                        </div>
+                    </div>
+                    <div class="engine-value">
+                        <p>覆盖创新创业、学科竞赛、科研辅助三大板块</p>
+                        <p>AI智能生成商业计划书与竞赛PPT</p>
+                        <p>论文润色与投稿期刊推荐服务</p>
+                    </div>
+                </div>
+                <div class="engine-detail-right">
+                    <div class="engine-mockup">
+                        <div class="mockup-placeholder">研赛创界面</div>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- 职途创内容 -->
+            <a href="zhituchuang.html" class="engine-detail-card" id="engine-zhitu">
+                <div class="engine-detail-left">
+                    <h3 class="engine-name">职途创 · 人岗匹配就业护航引擎</h3>
+                    <div class="engine-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">💼</span>
+                            <span class="feature-text">市场化就业</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🏛️</span>
+                            <span class="feature-text">体制内招录</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📄</span>
+                            <span class="feature-text">简历智能优化</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🤝</span>
+                            <span class="feature-text">AI模拟面试</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🎯</span>
+                            <span class="feature-text">人岗精准匹配</span>
+                        </div>
+                    </div>
+                    <div class="engine-value">
+                        <p>覆盖市场化就业与体制内招录两大方向</p>
+                        <p>人岗匹配精准度达85%</p>
+                        <p>企业ATS初筛通过率平均提升42.8%</p>
+                    </div>
+                </div>
+                <div class="engine-detail-right">
+                    <div class="engine-mockup">
+                        <div class="mockup-placeholder">职途创界面</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- 模块4：全场景解决方案轻量化展示区 -->
+    <section class="solutions-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title-dark">全场景解决方案</h2>
+                <p class="section-subtitle-dark">全周期覆盖，一站式解决大学生成长全场景痛点</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">📚</div>
+                    <h3>升学成长方案</h3>
+                    <p>专升本/考研/保研/留学全赛道规划，院校匹配、备考伴学、背景提升、复试模拟，一站式解决升学全流程痛点</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">🔬</div>
+                    <h3>科创能力提升方案</h3>
+                    <p>A/B类学科竞赛全流程辅助、科研论文/专利申报指导、创新创业项目孵化，让科创成果转化为升学、就业核心竞争力</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">💼</div>
+                    <h3>就业职业发展方案</h3>
+                    <p>AI简历优化、全真模拟面试、岗位智能匹配、体制内招录全周期辅导，覆盖市场化就业+公考全赛道</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">🏛️</div>
+                    <h3>高校数字化管理方案</h3>
+                    <p>学生成长数据中台、赛事科创管理系统、校企对接服务平台、AI生涯教学赋能体系，为高校提供就业育人全流程数字化解决方案</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块5：学生成功案例专属板块 -->
+    <section class="cases-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">学生成功案例</h2>
+                <p class="section-subtitle">用真实成长成果，见证AI赋能的力量</p>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-avatar">🎓</div>
+                    <div class="case-content">
+                        <h3>考研上岸案例</h3>
+                        <p class="case-school">武昌工学院 → 武汉大学</p>
+                        <p class="case-service">核心服务：升学规划 + 复试模拟</p>
+                        <p class="case-result">成果：二战上岸，初试分数提升68分</p>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <div class="case-avatar">🏆</div>
+                    <div class="case-content">
+                        <h3>竞赛获奖案例</h3>
+                        <p class="case-school">华中科技大学团队</p>
+                        <p class="case-service">核心服务：竞赛辅导 + 创新创业孵化</p>
+                        <p class="case-result">成果：互联网+大赛省级金奖</p>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <div class="case-avatar">💼</div>
+                    <div class="case-content">
+                        <h3>名企offer案例</h3>
+                        <p class="case-school">武汉理工大学 → 华为技术</p>
+                        <p class="case-service">核心服务：AI简历优化 + 模拟面试</p>
+                        <p class="case-result">成果：斩获3家大厂offer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 模块7：核心团队介绍板块 -->
+    <section class="team-section" id="team">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title-dark">核心团队</h2>
+                <p class="section-subtitle-dark">专业团队护航，全维度保障服务品质</p>
+            </div>
+            <div class="team-philosophy">
+                <p class="team-slogan">AI赋能生涯路，共育时代栋梁才</p>
+                <p class="team-mission">楚创通团队秉持"以生为基、以智赋能、以才兴邦"的核心理念，致力于通过AI技术打破教育资源壁垒，为大学生提供个性化、系统化的全周期生涯发展支持。</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-row">
+                    <div class="team-card">
+                        <div class="team-avatar">👩‍🏫</div>
+                        <h4>林琳</h4>
+                        <p class="team-role">学术指导老师</p>
+                        <p class="team-desc">生涯规划与教育心理学专家，提供学术理论框架与生涯测评指导</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">👨‍💼</div>
+                        <h4>孙金彪</h4>
+                        <p class="team-role">技术与商业指导</p>
+                        <p class="team-desc">AI产品商业化实战专家，主导技术架构与商业模式设计</p>
+                    </div>
+                </div>
+                <div class="team-row">
+                    <div class="team-card leader">
+                        <div class="team-avatar">👨‍💻</div>
+                        <h4>李翼飞</h4>
+                        <p class="team-role">项目总负责人</p>
+                        <p class="team-desc">技术核心与团队统筹，负责战略规划与AI引擎研发</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">📝</div>
+                        <h4>黄鑫凌</h4>
+                        <p class="team-role">文案策划与运营</p>
+                        <p class="team-desc">商业策划与品牌运营，负责校企合作与生态运营</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">💰</div>
+                        <h4>孙兴麒</h4>
+                        <p class="team-role">财务与竞赛支持</p>
+                        <p class="team-desc">财务管理与赛事申报，负责预算管控与数据决策支持</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">⚙️</div>
+                        <h4>吕俊杰</h4>
+                        <p class="team-role">技术研发</p>
+                        <p class="team-desc">系统架构与硬件开发，负责平台技术落地与优化</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">📢</div>
+                        <h4>杨佳鑫</h4>
+                        <p class="team-role">市场宣传与新媒体</p>
+                        <p class="team-desc">新媒体运营与品牌推广，负责市场拓展与用户增长</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块8：FAQ高频问题解答板块 -->
+    <section class="faq-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">常见问题</h2>
+                <p class="section-subtitle">你想了解的，都在这里</p>
+            </div>
+            <div class="faq-tabs">
+                <button class="faq-tab active" data-tab="student">学生</button>
+                <button class="faq-tab" data-tab="school">高校</button>
+                <button class="faq-tab" data-tab="enterprise">企业</button>
+            </div>
+            <div class="faq-content">
+                <div class="faq-panel active" id="student">
+                    <div class="faq-item">
+                        <div class="faq-question">楚创通平台提供哪些核心功能？</div>
+                        <div class="faq-answer">平台提供升学规划、创新创业指导、竞赛辅导、就业赋能四大核心服务，覆盖大学生成长全周期。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">平台服务是否收费？</div>
+                        <div class="faq-answer">基础功能免费使用，部分高级增值服务需要付费，具体请查看服务详情页。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">服务适合哪些人群？</div>
+                        <div class="faq-answer">主要服务对象为在校大学生、应届毕业生，以及有职业发展需求的社会人士。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">我的隐私数据是否安全？</div>
+                        <div class="faq-answer">平台严格遵守数据安全法规，采用加密存储传输，保护用户隐私不被泄露。</div>
+                    </div>
+                </div>
+                <div class="faq-panel" id="school">
+                    <div class="faq-item">
+                        <div class="faq-question">如何与平台对接合作？</div>
+                        <div class="faq-answer">请通过合作咨询入口联系我们，专业团队将为您提供定制化对接方案。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">平台支持哪些定制化服务？</div>
+                        <div class="faq-answer">我们提供包括数据分析、课程嵌入、管理系统对接等在内的多种定制化服务。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">数据对接是否合规？</div>
+                        <div class="faq-answer">平台已通过等保三级认证，数据采集和使用完全符合相关法律法规要求。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">有成功的合作案例吗？</div>
+                        <div class="faq-answer">已与多所高校建立合作，详情请查看落地成果页面。</div>
+                    </div>
+                </div>
+                <div class="faq-panel" id="enterprise">
+                    <div class="faq-item">
+                        <div class="faq-question">企业如何入驻平台？</div>
+                        <div class="faq-answer">请通过合作咨询入口提交入驻申请，我们将在3个工作日内与您联系。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">岗位发布有哪些规则？</div>
+                        <div class="faq-answer">岗位需真实有效，符合国家相关法律法规，我们会进行审核后发布。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">人岗匹配是如何实现的？</div>
+                        <div class="faq-answer">基于AI四维匹配模型，综合考量学生能力画像与企业岗位需求，匹配精准度达85%。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">如何开展校企深度合作？</div>
+                        <div class="faq-answer">我们提供校园招聘、实习基地、联合培养等多种合作模式，欢迎洽谈。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块9：底部转化CTA与页脚区 -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-title">携手楚创通，共建大学生生涯发展智能化新生态</h2>
+            <p class="cta-desc">加入我们，开启AI赋能的生涯规划之旅，让每一位大学生都能找准人生方向、实现核心价值</p>
+            <div class="cta-buttons">
+                <a href="login.html" class="btn-cta-primary">立即体验</a>
+                <a href="contact.html" class="btn-cta-outline">合作咨询</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>品牌介绍</h4>
+                    <p>楚创通致力于为高校学生提供AI驱动的全周期生涯规划服务，让成长之路更加清晰、高效。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>核心产品</h4>
+                    <ul>
+                        <li><a href="engines.html#shengxue">升学创引擎</a></li>
+                        <li><a href="engines.html#yansai">研赛创引擎</a></li>
+                        <li><a href="engines.html#zhitu">职途创引擎</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>解决方案</h4>
+                    <ul>
+                        <li><a href="solutions.html">升学成长方案</a></li>
+                        <li><a href="solutions.html">科创能力提升</a></li>
+                        <li><a href="solutions.html">就业职业发展</a></li>
+                        <li><a href="solutions.html">高校数字化管理</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="about.html">团队介绍</a></li>
+                        <li><a href="cases.html">落地成果</a></li>
+                        <li><a href="#team">核心团队</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <p>联系方式即将公布</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 楚创通 保留所有权利 | 鄂ICP备 xxxxxx 号 - 1</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.getElementById('mainHeader');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            const faqTabs = document.querySelectorAll('.faq-tab');
+            const faqPanels = document.querySelectorAll('.faq-panel');
+            faqTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const targetTab = this.getAttribute('data-tab');
+                    faqTabs.forEach(t => t.classList.remove('active'));
+                    faqPanels.forEach(p => p.classList.remove('active'));
+                    this.classList.add('active');
+                    document.getElementById(targetTab).classList.add('active');
+                });
+            });
+
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                item.querySelector('.faq-question').addEventListener('click', function() {
+                    const isActive = item.classList.contains('active');
+                    faqItems.forEach(i => i.classList.remove('active'));
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
