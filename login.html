@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录/注册 - 楚创通</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 模块1：顶部固定悬浮导航栏 -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html" class="brand-logo">
+                    <span class="logo-icon">🚀</span>
+                    <div class="logo-text">
+                        <span class="logo-title">楚创通</span>
+                        <span class="logo-subtitle">大学生全周期生涯规划多模态AI平台</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
+                    <li class="nav-item"><a href="solutions.html" class="nav-link">解决方案</a></li>
+                    <li class="nav-item"><a href="engines.html" class="nav-link">核心引擎</a></li>
+                    <li class="nav-item"><a href="cases.html" class="nav-link">落地成果</a></li>
+                    <li class="nav-item"><a href="ecosystem.html" class="nav-link">合作生态</a></li>
+                    <li class="nav-item"><a href="index.html#team" class="nav-link">核心团队</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="login.html" class="btn-primary-gradient">立即体验</a>
+                <a href="contact.html" class="btn-outline-primary">合作咨询</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 三大引擎Tab栏 -->
+    <div class="engine-tabs-bar" id="engineTabsBar">
+        <div class="tabs-bar-container">
+            <div class="engine-tabs-wrapper">
+                <a href="shengxuechuang.html" class="engine-tab-item" data-engine="shengxue">
+                    <span class="tab-icon">📚</span>
+                    <span class="tab-name">升学创</span>
+                    <span class="tab-desc">进阶引擎</span>
+                </a>
+                <a href="yansaichuang.html" class="engine-tab-item" data-engine="yansai">
+                    <span class="tab-icon">🔬</span>
+                    <span class="tab-name">研赛创</span>
+                    <span class="tab-desc">循环引擎</span>
+                </a>
+                <a href="zhituchuang.html" class="engine-tab-item" data-engine="zhitu">
+                    <span class="tab-icon">💼</span>
+                    <span class="tab-name">职途创</span>
+                    <span class="tab-desc">护航引擎</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 登录/注册主区域 -->
+    <section class="auth-page">
+        <div class="container">
+            <div class="auth-wrapper">
+                <!-- 右侧表单区域 -->
+                <div class="auth-form-section">
+                    <div class="auth-header">
+                        <h2>平台统一入口</h2>
+                        <p>Web/APP/小程序三端通用</p>
+                    </div>
+
+                    <!-- 标签切换 -->
+                    <div class="auth-tabs">
+                        <button class="auth-tab active" data-tab="login">登录</button>
+                        <button class="auth-tab" data-tab="register">注册</button>
+                    </div>
+
+                    <!-- 登录表单 -->
+                    <form class="auth-form login-form" id="login-form">
+                        <div class="form-group">
+                            <label for="login-phone">手机号码</label>
+                            <input type="tel" id="login-phone" name="phone" placeholder="请输入手机号码" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">密码</label>
+                            <input type="password" id="login-password" name="password" placeholder="请输入密码" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-captcha">验证码</label>
+                            <div class="captcha-row">
+                                <input type="text" id="login-captcha" name="captcha" placeholder="请输入验证码" required>
+                                <button type="button" class="captcha-btn" id="get-captcha">获取验证码</button>
+                            </div>
+                        </div>
+                        <div class="form-options">
+                            <label>
+                                <input type="checkbox" name="remember"> 记住我
+                            </label>
+                            <a href="#" class="forgot-link">忘记密码？</a>
+                        </div>
+                        <button type="submit" class="btn-primary">一键登录</button>
+                    </form>
+
+                    <!-- 注册表单 -->
+                    <form class="auth-form register-form" id="register-form">
+                        <!-- 第一步：基础信息 -->
+                        <div class="register-step step-1">
+                            <h4 class="step-title">第一步：基本信息</h4>
+                            <div class="form-group">
+                                <label for="register-phone">手机号码</label>
+                                <input type="tel" id="register-phone" name="phone" placeholder="请输入手机号码" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-captcha">短信验证码</label>
+                                <div class="captcha-row">
+                                    <input type="text" id="register-captcha" name="captcha" placeholder="请输入验证码" required>
+                                    <button type="button" class="captcha-btn" id="get-register-captcha">获取验证码</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-password">设置密码</label>
+                                <input type="password" id="register-password" name="password" placeholder="请设置密码（6-20位）" required>
+                            </div>
+                            <button type="button" class="btn-secondary next-step" data-step="2">下一步</button>
+                        </div>
+
+                        <!-- 第二步：身份选择 -->
+                        <div class="register-step step-2">
+                            <h4 class="step-title">第二步：选择身份</h4>
+                            <p class="step-desc">注册时锁定唯一主身份，请根据实际情况选择</p>
+                            <div class="identity-options">
+                                <div class="identity-card active" data-identity="personal">
+                                    <div class="identity-icon">👤</div>
+                                    <h4>个人用户</h4>
+                                    <p>在校大学生/应届毕业生/往届毕业生/选调生/职场人群</p>
+                                    <div class="identity-check">✓</div>
+                                </div>
+                                <div class="identity-card" data-identity="school">
+                                    <div class="identity-icon">🏛️</div>
+                                    <h4>高校主体</h4>
+                                    <p>高校管理员/高校教师，需上传资质证明审核</p>
+                                    <div class="identity-check">✓</div>
+                                </div>
+                                <div class="identity-card" data-identity="enterprise">
+                                    <div class="identity-icon">🏢</div>
+                                    <h4>企业主体</h4>
+                                    <p>企业管理员/HR，需上传资质证明审核</p>
+                                    <div class="identity-check">✓</div>
+                                </div>
+                            </div>
+                            <div class="step-buttons">
+                                <button type="button" class="btn-secondary prev-step" data-step="1">上一步</button>
+                                <button type="button" class="btn-primary next-step" data-step="3">下一步</button>
+                            </div>
+                        </div>
+
+                        <!-- 第三步：完善信息 -->
+                        <div class="register-step step-3">
+                            <h4 class="step-title">第三步：完善信息</h4>
+                            <div class="form-group">
+                                <label for="register-name">姓名</label>
+                                <input type="text" id="register-name" name="name" placeholder="请输入真实姓名" required>
+                            </div>
+                            <div class="form-group" id="sub-identity-group">
+                                <label for="sub-identity">子身份</label>
+                                <select id="sub-identity" name="sub-identity" required>
+                                    <!-- 动态加载选项 -->
+                                </select>
+                            </div>
+                            <div class="form-group" id="cert-upload-group">
+                                <label>资质证明（选填）</label>
+                                <div class="upload-area">
+                                    <input type="file" id="cert-file" name="cert-file" accept="image/*,.pdf">
+                                    <div class="upload-icon">📁</div>
+                                    <p>点击或拖拽上传资质证明</p>
+                                </div>
+                            </div>
+                            <div class="form-options">
+                                <label>
+                                    <input type="checkbox" name="terms" id="terms-checkbox"> 我已阅读并同意
+                                    <a href="#">服务条款</a> 和 <a href="#">隐私政策</a>
+                                </label>
+                            </div>
+                            <div class="step-buttons">
+                                <button type="button" class="btn-secondary prev-step" data-step="2">上一步</button>
+                                <button type="submit" class="btn-primary">完成注册</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- 社交登录 -->
+                    <div class="social-auth">
+                        <p>或使用以下方式登录/注册</p>
+                        <div class="social-buttons">
+                            <button class="social-btn" title="微信登录">
+                                <span class="social-icon">💬</span>
+                                <span>微信</span>
+                            </button>
+                            <button class="social-btn" title="QQ登录">
+                                <span class="social-icon">🐧</span>
+                                <span>QQ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于楚创通</h4>
+                    <p>楚创通致力于为高校学生提供AI驱动的竞赛辅助服务，让竞赛准备更简单、更高效。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>核心服务</h4>
+                    <ul>
+                        <li><a href="engines.html">升学创</a></li>
+                        <li><a href="engines.html">研赛创</a></li>
+                        <li><a href="engines.html">职途创</a></li>
+                        <li><a href="solutions.html">解决方案</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>了解更多</h4>
+                    <ul>
+                        <li><a href="cases.html">落地成果</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <p>📧 support@chuangtong.com</p>
+                    <p>📞 400-123-4567</p>
+                    <p>🕐 周一至周五 9:00-18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 楚创通. 保留所有权利. | 京ICP备12345678号-1</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

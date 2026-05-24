@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - 楚创通</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 模块1：顶部固定悬浮导航栏 -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html" class="brand-logo">
+                    <span class="logo-icon">🚀</span>
+                    <div class="logo-text">
+                        <span class="logo-title">楚创通</span>
+                        <span class="logo-subtitle">大学生全周期生涯规划多模态AI平台</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active">关于我们</a></li>
+                    <li class="nav-item"><a href="solutions.html" class="nav-link">解决方案</a></li>
+                    <li class="nav-item"><a href="engines.html" class="nav-link">核心引擎</a></li>
+                    <li class="nav-item"><a href="cases.html" class="nav-link">落地成果</a></li>
+                    <li class="nav-item"><a href="ecosystem.html" class="nav-link">合作生态</a></li>
+                    <li class="nav-item"><a href="index.html#team" class="nav-link">核心团队</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="login.html" class="btn-primary-gradient">立即体验</a>
+                <a href="contact.html" class="btn-outline-primary">合作咨询</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 三大引擎Tab栏 -->
+    <div class="engine-tabs-bar" id="engineTabsBar">
+        <div class="tabs-bar-container">
+            <div class="engine-tabs-wrapper">
+                <a href="shengxuechuang.html" class="engine-tab-item" data-engine="shengxue">
+                    <span class="tab-icon">📚</span>
+                    <span class="tab-name">升学创</span>
+                    <span class="tab-desc">进阶引擎</span>
+                </a>
+                <a href="yansaichuang.html" class="engine-tab-item" data-engine="yansai">
+                    <span class="tab-icon">🔬</span>
+                    <span class="tab-name">研赛创</span>
+                    <span class="tab-desc">循环引擎</span>
+                </a>
+                <a href="zhituchuang.html" class="engine-tab-item" data-engine="zhitu">
+                    <span class="tab-icon">💼</span>
+                    <span class="tab-name">职途创</span>
+                    <span class="tab-desc">护航引擎</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 板块1：首屏 Hero 区 -->
+    <section class="about-hero-section" id="hero-section">
+        <div class="about-hero-bg"></div>
+        <div class="about-hero-particles" id="heroParticles"></div>
+        <div class="about-hero-container">
+            <div class="about-hero-left">
+                <h1 class="about-hero-title">
+                    <span class="title-rocket">🚀</span>
+                    楚创通 - 面向大学生全周期生涯规划的多模态 AI 平台
+                </h1>
+                <p class="about-hero-slogan">AI 赋能生涯路，共育时代栋梁才</p>
+                <p class="about-hero-desc">国内首个打通「学生 — 高校 — 企业 — 政府」四方资源闭环，覆盖青年从入学到职场全生命周期的 AI 生涯服务平台</p>
+                <div class="about-hero-stats">
+                    <div class="hero-stat-item">
+                        <span class="stat-icon">🚀</span>
+                        <span class="stat-value" data-target="800">0</span>
+                        <span class="stat-label">+ 服务学生</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="stat-icon">🚀</span>
+                        <span class="stat-value" data-target="2">0</span>
+                        <span class="stat-label">所合作高校</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="stat-icon">🚀</span>
+                        <span class="stat-label">四方协同</span>
+                    </div>
+                </div>
+                <div class="about-hero-buttons">
+                    <a href="contact.html" class="btn-primary-gradient">合作咨询</a>
+                    <a href="login.html" class="btn-outline-light">立即体验</a>
+                </div>
+            </div>
+            <div class="about-hero-right">
+                <div class="hero-engine-card card-1">
+                    <span class="card-rocket">🚀</span>
+                    <h3>升学创</h3>
+                    <p>精准定位升学目标<br>智能规划备考路径</p>
+                </div>
+                <div class="hero-engine-card card-2">
+                    <span class="card-rocket">🚀</span>
+                    <h3>研赛创</h3>
+                    <p>科研竞赛双轨并行<br>成果转化全程助力</p>
+                </div>
+                <div class="hero-engine-card card-3">
+                    <span class="card-rocket">🚀</span>
+                    <h3>职途创</h3>
+                    <p>人岗智能精准匹配<br>求职能力全面提升</p>
+                </div>
+            </div>
+        </div>
+        <a href="#positioning-section" class="scroll-indicator">
+            <span class="scroll-icon">↓</span>
+            <span class="scroll-rocket">🚀</span>
+        </a>
+    </section>
+
+    <!-- 板块2：项目核心定位与价值壁垒 -->
+    <section class="about-positioning-section" id="positioning-section">
+        <div class="about-section-container">
+            <div class="about-section-header">
+                <h2 class="about-section-title">
+                    <span class="title-rocket">🚀</span>
+                    项目核心定位
+                </h2>
+                <p class="about-section-subtitle">以在校大学生为核心根基，覆盖全生命周期成长需求，破解青年生涯规划、高校育人管理、校企人才对接三大核心痛点，打造四方协同的生涯服务新生态</p>
+            </div>
+
+            <div class="pain-point-grid">
+                <div class="pain-point-card">
+                    <span class="card-rocket">🚀</span>
+                    <h3>青年生涯规划痛点破解</h3>
+                    <div class="card-content">
+                        <p><strong>核心痛点：</strong>方向迷茫、信息不对称、个性化指导缺失</p>
+                        <p><strong>解决方案：</strong>千人千面 AI 测评、生涯路径智能规划、导师 1 对 1 指导</p>
+                        <p><strong>品牌价值：</strong>让每一位青年都能找到属于自己的成长方向</p>
+                    </div>
+                </div>
+                <div class="pain-point-card">
+                    <span class="card-rocket">🚀</span>
+                    <h3>高校生涯教育管理痛点破解</h3>
+                    <div class="card-content">
+                        <p><strong>核心痛点：</strong>数字化能力不足、学生发展跟踪难、校家社协同弱</p>
+                        <p><strong>解决方案：</strong>数字化管理中台、学生成长全链路跟踪、家校社协同系统</p>
+                        <p><strong>品牌价值：</strong>助力高校落实立德树人根本任务</p>
+                    </div>
+                </div>
+                <div class="pain-point-card">
+                    <span class="card-rocket">🚀</span>
+                    <h3>校企人才供需错位痛点破解</h3>
+                    <div class="card-content">
+                        <p><strong>核心痛点：</strong>供需信息不对称、人岗匹配效率低、人才质量不达标</p>
+                        <p><strong>解决方案：</strong>四方资源闭环、智能人岗匹配、人才能力预评估</p>
+                        <p><strong>品牌价值：</strong>打通人才培养与企业需求最后一公里</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecosystem-container">
+                <div class="ecosystem-title">四方协同闭环生态</div>
+                <div class="ecosystem-circle">
+                    <div class="ecosystem-node student">
+                        <span class="node-icon">🎓</span>
+                        <span class="node-rocket">🚀</span>
+                        <h4>学生核心层</h4>
+                        <p>生涯规划与能力成长</p>
+                    </div>
+                    <div class="ecosystem-node university">
+                        <span class="node-icon">🏛️</span>
+                        <span class="node-rocket">🚀</span>
+                        <h4>高校供给端</h4>
+                        <p>人才培养与育人管理</p>
+                    </div>
+                    <div class="ecosystem-node enterprise">
+                        <span class="node-icon">🏢</span>
+                        <span class="node-rocket">🚀</span>
+                        <h4>企业出口端</h4>
+                        <p>人才需求与岗位供给</p>
+                    </div>
+                    <div class="ecosystem-node government">
+                        <span class="node-icon">⚖️</span>
+                        <span class="node-rocket">🚀</span>
+                        <h4>政府支撑端</h4>
+                        <p>政策引导与资源保障</p>
+                    </div>
+                    <div class="ecosystem-arrow arrow-1"></div>
+                    <div class="ecosystem-arrow arrow-2"></div>
+                    <div class="ecosystem-arrow arrow-3"></div>
+                    <div class="ecosystem-arrow arrow-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 板块3：使命愿景与品牌理念 -->
+    <section class="about-mission-section" id="mission-section">
+        <div class="about-section-container">
+            <div class="about-section-header">
+                <h2 class="about-section-title">
+                    <span class="title-rocket">🚀</span>
+                    使命愿景
+                </h2>
+                <p class="about-section-subtitle">以科技赋能青年成长，用专业护航生涯发展</p>
+            </div>
+
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-header">
+                        <span class="mission-rocket">🚀</span>
+                        <h3>我们的使命</h3>
+                    </div>
+                    <p>以科技赋能青年成长，用专业护航生涯发展，让每一位大学生都能找准人生方向、实现核心价值</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-header">
+                        <span class="mission-rocket">🚀</span>
+                        <h3>我们的愿景</h3>
+                    </div>
+                    <p>成为国内领先的大学生生涯发展全周期服务平台，构建四方共赢的可持续闭环生态</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-header">
+                        <span class="mission-rocket">🚀</span>
+                        <h3>我们的价值观</h3>
+                    </div>
+                    <p>坚持长期成长、个性化服务、成果可转化、多方协同共生的理念</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 板块4：发展历程与未来规划 -->
+    <section class="about-history-section" id="history-section">
+        <div class="about-section-container">
+            <div class="about-section-header">
+                <h2 class="about-section-title">
+                    <span class="title-rocket">🚀</span>
+                    发展历程
+                </h2>
+                <p class="about-section-subtitle">从 0 到 1 稳步落地，深耕青年生涯服务赛道，持续迭代成长</p>
+            </div>
+
+            <div class="horizontal-timeline-container">
+                <div class="horizontal-timeline-line"></div>
+                <div class="horizontal-timeline-item">
+                    <div class="horizontal-timeline-node">
+                        <span class="timeline-rocket">🚀</span>
+                    </div>
+                    <div class="horizontal-timeline-content">
+                        <h4>2024.03</h4>
+                        <p><strong>项目启动</strong></p>
+                        <p>团队组建，完成需求调研与原型设计</p>
+                    </div>
+                </div>
+                <div class="horizontal-timeline-item">
+                    <div class="horizontal-timeline-node">
+                        <span class="timeline-rocket">🚀</span>
+                    </div>
+                    <div class="horizontal-timeline-content">
+                        <h4>2024.06</h4>
+                        <p><strong>技术研发</strong></p>
+                        <p>完成核心功能开发，获得国家级大创立项</p>
+                    </div>
+                </div>
+                <div class="horizontal-timeline-item">
+                    <div class="horizontal-timeline-node">
+                        <span class="timeline-rocket">🚀</span>
+                    </div>
+                    <div class="horizontal-timeline-content">
+                        <h4>2024.10</h4>
+                        <p><strong>试点落地</strong></p>
+                        <p>与 2 所高校达成合作，完成首批试点</p>
+                    </div>
+                </div>
+                <div class="horizontal-timeline-item">
+                    <div class="horizontal-timeline-node">
+                        <span class="timeline-rocket">🚀</span>
+                    </div>
+                    <div class="horizontal-timeline-content">
+                        <h4>2025.03</h4>
+                        <p><strong>产品迭代</strong></p>
+                        <p>完成 V2.0 版本，覆盖 800+ 用户</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="future-grid">
+                <div class="future-card">
+                    <div class="future-header">
+                        <span class="future-rocket">🚀</span>
+                        <h3>短期目标（1 年）</h3>
+                    </div>
+                    <p>覆盖湖北省内 20 所高校，服务 50000+ 学生，完成 100+ 企业合作</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-header">
+                        <span class="future-rocket">🚀</span>
+                        <h3>中期目标（2-3 年）</h3>
+                    </div>
+                    <p>覆盖华中地区 100 所高校，服务 200000+ 学生，建立 500+ 企业资源池</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-header">
+                        <span class="future-rocket">🚀</span>
+                        <h3>长期愿景（3 年以上）</h3>
+                    </div>
+                    <p>成为国内领先的大学生生涯服务平台，构建四方共赢的可持续生态体系</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 板块5：社会价值与责任担当 -->
+    <section class="about-value-section" id="value-section">
+        <div class="about-section-container">
+            <div class="about-section-header">
+                <h2 class="about-section-title">
+                    <span class="title-rocket">🚀</span>
+                    社会价值
+                </h2>
+                <p class="about-section-subtitle">以技术赋能教育公平，以生态助力青年就业，践行新时代青年创新创业的社会责任</p>
+            </div>
+
+            <div class="value-grid">
+                <div class="value-card">
+                    <span class="value-rocket">🚀</span>
+                    <h4>就业带动</h4>
+                    <p>推动青年高质量就业</p>
+                    <p>搭建校企人才对接桥梁</p>
+                    <p>提供个性化就业指导</p>
+                    <p>助力学生精准匹配岗位</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-rocket">🚀</span>
+                    <h4>教育公平</h4>
+                    <p>让优质资源触手可及</p>
+                    <p>打破地域教育资源壁垒</p>
+                    <p>服务全国各地区学生</p>
+                    <p>提供均等的发展机会</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-rocket">🚀</span>
+                    <h4>高校赋能</h4>
+                    <p>助力育人数字化升级</p>
+                    <p>提供学生发展数据平台</p>
+                    <p>优化生涯教育体系建设</p>
+                    <p>提升高校人才培养质量</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-rocket">🚀</span>
+                    <h4>产业赋能</h4>
+                    <p>精准匹配产业人才需求</p>
+                    <p>连接企业与高校资源</p>
+                    <p>提供人才能力评估服务</p>
+                    <p>助力企业精准招聘</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-rocket">🚀</span>
+                    <h4>人才培养</h4>
+                    <p>全方位能力提升体系</p>
+                    <p>覆盖从入学到职场全程</p>
+                    <p>提供升学就业竞赛指导</p>
+                    <p>打造完整成长闭环</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-rocket">🚀</span>
+                    <h4>数据价值</h4>
+                    <p>就业趋势数据支持决策</p>
+                    <p>分析人才市场需求变化</p>
+                    <p>提供数据支撑与参考</p>
+                    <p>助力就业政策优化</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-rocket">🚀</span>
+                    <h4>数字素养</h4>
+                    <p>提升青年数字化能力</p>
+                    <p>引入AI技术助力成长</p>
+                    <p>培养数字时代核心能力</p>
+                    <p>增强学生就业竞争力</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-rocket">🚀</span>
+                    <h4>公益辐射</h4>
+                    <p>服务欠发达地区青年</p>
+                    <p>提供免费生涯规划服务</p>
+                    <p>支持乡村振兴人才建设</p>
+                    <p>践行社会责任与担当</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 板块6：合作邀约与联系我们 -->
+    <section class="about-contact-section" id="contact-section">
+        <div class="about-contact-bg"></div>
+        <div class="about-contact-particles" id="contactParticles"></div>
+        <div class="about-contact-container">
+            <div class="about-contact-left">
+                <h2 class="contact-title">
+                    <span class="title-rocket">🚀</span>
+                    携手楚创通，共建生涯服务新生态
+                </h2>
+                <p class="contact-desc">我们开放高校、企业、政府、行业机构全维度合作，共同打造青年生涯成长服务闭环，助力教育数字化升级与青年高质量就业</p>
+                <div class="contact-tags">
+                    <div class="contact-tag">
+                        <span class="tag-rocket">🚀</span>
+                        高校数字化合作
+                    </div>
+                    <div class="contact-tag">
+                        <span class="tag-rocket">🚀</span>
+                        企业人才招聘合作
+                    </div>
+                    <div class="contact-tag">
+                        <span class="tag-rocket">🚀</span>
+                        政府公共就业服务合作
+                    </div>
+                </div>
+                <div class="contact-buttons">
+                    <a href="contact.html" class="btn-white">高校合作咨询</a>
+                    <a href="contact.html" class="btn-outline-white">企业入驻对接</a>
+                </div>
+            </div>
+            <div class="about-contact-right">
+                <div class="contact-card">
+                    <h3 class="contact-card-title">
+                        <span class="card-rocket">🚀</span>
+                        联系我们
+                    </h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div class="contact-text">
+                            <span class="contact-label">商务邮箱</span>
+                            <span class="contact-value"></span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div class="contact-text">
+                            <span class="contact-label">办公电话</span>
+                            <span class="contact-value"></span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div class="contact-text">
+                            <span class="contact-label">办公地址</span>
+                            <span class="contact-value"></span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🔗</span>
+                        <div class="contact-text">
+                            <span class="contact-label">官方新媒体</span>
+                            <span class="contact-value"></span>
+                        </div>
+                    </div>
+                    <div class="contact-qr-placeholder">
+                        <p></p>
+                        <p class="qr-desc"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>楚创通</h4>
+                    <p>国家级大学生创新创业训练计划立项项目，专注于大学生全周期生涯规划的多模态AI平台，以AI赋能生涯路，共育时代栋梁才。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>核心引擎</h4>
+                    <ul>
+                        <li><a href="engines.html#shengxue">升学创引擎</a></li>
+                        <li><a href="engines.html#yansai">研赛创引擎</a></li>
+                        <li><a href="engines.html#zhitu">职途创引擎</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>了解更多</h4>
+                    <ul>
+                        <li><a href="solutions.html">解决方案</a></li>
+                        <li><a href="cases.html">落地成果</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <p>联系方式即将公布，敬请期待</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 楚创通 保留所有权利 | 鄂ICP备 xxxxxx 号 - 1</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>

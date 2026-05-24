@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>核心引擎 - 楚创通</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 顶部固定导航栏 -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html" class="brand-logo">
+                    <span class="logo-icon">🚀</span>
+                    <div class="logo-text">
+                        <span class="logo-title">楚创通</span>
+                        <span class="logo-subtitle">大学生全周期生涯规划多模态AI平台</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
+                    <li class="nav-item"><a href="solutions.html" class="nav-link">解决方案</a></li>
+                    <li class="nav-item"><a href="engines.html" class="nav-link active">核心引擎</a></li>
+                    <li class="nav-item"><a href="cases.html" class="nav-link">落地成果</a></li>
+                    <li class="nav-item"><a href="ecosystem.html" class="nav-link">合作生态</a></li>
+                    <li class="nav-item"><a href="index.html#team" class="nav-link">核心团队</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="login.html" class="btn-primary-gradient">立即体验</a>
+                <a href="contact.html" class="btn-outline-primary">合作咨询</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 主页面内容 -->
+    <main class="engines-main-page">
+        
+        <!-- Hero区域 -->
+        <section class="hero-section">
+            <div class="hero-bg-effects">
+                <div class="hero-gradient"></div>
+                <div class="hero-particles" id="hero-particles"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🎯</span>
+                    <span class="badge-text">大学生成长全周期闭环服务</span>
+                </div>
+                <h1 class="hero-title">核心引擎</h1>
+                <p class="hero-subtitle">升学 · 研赛 · 就业</p>
+                <p class="hero-description">基于文档内所有流程图，业务体系核心分为三大主板块，向下拆解为六大细分服务小板块，形成大学生成长全周期闭环服务体系</p>
+                <div class="hero-cta">
+                    <a href="#engines-overview" class="cta-btn primary">探索引擎</a>
+                    <a href="#modules-overview" class="cta-btn secondary">查看详情</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>向下滚动</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 固定导航区 -->
+        <nav class="modules-nav" id="modules-nav">
+            <div class="modules-nav-container">
+                <div class="nav-title">六大服务模块</div>
+                <div class="nav-links">
+                    <a href="module-1-shengxue.html" class="nav-link-item">
+                        <span class="link-icon">📚</span>
+                        <span class="link-text">升学进阶</span>
+                    </a>
+                    <a href="module-2-chuangye.html" class="nav-link-item">
+                        <span class="link-icon">💡</span>
+                        <span class="link-text">创新创业</span>
+                    </a>
+                    <a href="module-3-jingsai.html" class="nav-link-item">
+                        <span class="link-icon">🏆</span>
+                        <span class="link-text">竞赛服务</span>
+                    </a>
+                    <a href="module-4-keyan.html" class="nav-link-item">
+                        <span class="link-icon">🔬</span>
+                        <span class="link-text">科研评审</span>
+                    </a>
+                    <a href="module-5-jiuye.html" class="nav-link-item">
+                        <span class="link-icon">💼</span>
+                        <span class="link-text">市场化就业</span>
+                    </a>
+                    <a href="module-6-tizhi.html" class="nav-link-item">
+                        <span class="link-icon">📋</span>
+                        <span class="link-text">体制内招录</span>
+                    </a>
+                </div>
+                <div class="nav-search">
+                    <input type="text" class="search-input" placeholder="搜索服务模块..." />
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 三大引擎总览区 -->
+        <section class="engines-overview" id="engines-overview">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">三大核心主板块</span>
+                    <h2 class="section-title">业务核心顶层架构</h2>
+                    <p class="section-desc">三大板块协同运作，覆盖大学生成长全周期</p>
+                </div>
+                
+                <div class="engines-grid">
+                    <!-- 升学创 -->
+                    <div class="engine-card engine-primary">
+                        <div class="engine-card-header">
+                            <div class="engine-icon">📚</div>
+                            <div class="engine-badge-tag">进阶引擎</div>
+                        </div>
+                        <h3 class="engine-title">升学创进阶引擎板块</h3>
+                        <p class="engine-desc">聚焦大学生全赛道升学需求，提供从择校到录取的全流程进阶服务</p>
+                        <div class="engine-modules-preview">
+                            <span class="module-tag">升学全周期进阶服务</span>
+                        </div>
+                        <div class="engine-card-footer">
+                            <div class="engine-sub-links">
+                                <a href="module-1-shengxue.html" class="sub-link">升学进阶</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 研赛创 -->
+                    <div class="engine-card engine-secondary">
+                        <div class="engine-card-header">
+                            <div class="engine-icon">🔬</div>
+                            <div class="engine-badge-tag">循环引擎</div>
+                        </div>
+                        <h3 class="engine-title">研赛创全周期孵化板块</h3>
+                        <p class="engine-desc">覆盖科研、竞赛、创新创业三大维度，为大学生提供从0到1的成果孵化与能力提升服务</p>
+                        <div class="engine-modules-preview">
+                            <span class="module-tag">创新创业孵化</span>
+                            <span class="module-tag">竞赛全流程辅助</span>
+                            <span class="module-tag">科研全流程评审</span>
+                        </div>
+                        <div class="engine-card-footer">
+                            <div class="engine-sub-links">
+                                <a href="module-2-chuangye.html" class="sub-link">创新创业</a>
+                                <a href="module-3-jingsai.html" class="sub-link">竞赛服务</a>
+                                <a href="module-4-keyan.html" class="sub-link">科研评审</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 职途创 -->
+                    <div class="engine-card engine-tertiary">
+                        <div class="engine-card-header">
+                            <div class="engine-icon">💼</div>
+                            <div class="engine-badge-tag">护航引擎</div>
+                        </div>
+                        <h3 class="engine-title">职途创全链路服务板块</h3>
+                        <p class="engine-desc">围绕大学生就业需求，通过自主测评明确职业方向，覆盖市场化求职与体制内招录两大方向，提供全链路求职就业赋能服务</p>
+                        <div class="engine-modules-preview">
+                            <span class="module-tag">自主测评</span>
+                            <span class="module-tag">市场化就业全链路</span>
+                            <span class="module-tag">体制内招录全周期</span>
+                        </div>
+                        <div class="engine-card-footer">
+                            <div class="engine-sub-links">
+                                <a href="module-5-jiuye.html" class="sub-link primary-link">开始测评</a>
+                                <a href="module-5-jiuye.html" class="sub-link">市场化就业</a>
+                                <a href="module-6-tizhi.html" class="sub-link">体制内招录</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心引擎详细介绍区域 -->
+        <section class="detailed-intro" id="detailed-intro">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">核心引擎体系</span>
+                    <h2 class="section-title">楚创通平台核心引擎体系介绍</h2>
+                    <p class="section-desc">三大自研AI引擎，构建「升学-科创-就业」全链路闭环成长体系</p>
+                </div>
+
+                <!-- 平台概述 -->
+                <div class="intro-overview">
+                    <p class="overview-text">
+                        楚创通三大自研AI引擎，是平台全周期生涯服务的技术核心与功能载体，完整覆盖大学生从学业进阶、能力提升到职业发展的全生命周期成长需求，构建了「升学-科创-就业」全链路数据互通、成果复用、双向赋能的闭环成长体系，彻底打破传统生涯服务场景割裂、信息孤岛的行业痛点。
+                    </p>
+                </div>
+
+                <!-- 三大引擎详细介绍 -->
+                <div class="engines-detail-grid">
+                    <!-- 升学创・进阶引擎 -->
+                    <div class="engine-detail-card engine-shengxue">
+                        <div class="engine-detail-header">
+                            <div class="engine-detail-icon">📚</div>
+                            <div class="engine-detail-title-wrap">
+                                <h3 class="engine-detail-title">升学创・进阶引擎</h3>
+                                <span class="engine-detail-badge">进阶引擎</span>
+                            </div>
+                        </div>
+                        
+                        <div class="engine-detail-core">
+                            <h4 class="core-title">核心定位</h4>
+                            <p class="core-desc">平台学历与学业长期成长的专属AI服务引擎，完整覆盖在校学生专升本/考研/保研/留学、职场人在职升学/在职考研全赛道，精准解决学生升学规划盲目、择校信息差大、备考无系统支持、升学背景竞争力不足、高校升学指导师资缺口大的核心痛点。</p>
+                        </div>
+
+                        <div class="engine-detail-results">
+                            <h4 class="results-title">核心可量化成效</h4>
+                            <div class="results-list">
+                                <div class="result-item">
+                                    <span class="result-value">90%+</span>
+                                    <span class="result-label">院校与专业匹配精准度，远超行业平均65%的水平</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">0.85+</span>
+                                    <span class="result-label">复试模拟测评结果与院校实际面试评分相关性</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">92%</span>
+                                    <span class="result-label">背景提升方案适配度</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">38%</span>
+                                    <span class="result-label">升学申请通过率较行业平均水平提升</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="engine-detail-modules">
+                            <h4 class="modules-title">核心板块</h4>
+                            <div class="module-detail-item">
+                                <div class="module-number">01</div>
+                                <div class="module-content">
+                                    <h5 class="module-title">升学择校智能匹配板块</h5>
+                                    <p class="module-desc">本板块是升学规划的核心定标环节，通过四阶递进式流程，为用户生成精准的院校/专业择校方案与梯度规划。</p>
+                                    <ul class="module-subpoints">
+                                        <li><strong>个人背景与适配性评估：</strong>人工提交学历、成绩、专业背景、升学赛道选择等核心信息，AI完成赛道专属度背景测评、个人核心竞争力/短板拆解，同步完成对应赛道最新政策解读、历年录取情况大数据分析，最终与用户确认核心升学需求。</li>
+                                        <li><strong>院校/专业智能匹配与梯度划分：</strong>针对专升本、考研、保研、留学四大细分赛道，分别完成招生政策、录取门槛、报录比、专业实力、院校偏好等核心维度拆解，AI基于个人背景与赛道专属院校库完成智能匹配，自动划分「冲一冲、稳一稳、保保保」三大梯度，生成初步择校清单。</li>
+                                        <li><strong>院校筛选与最终确认：</strong>AI补充对应院校导师情况、录取细则等详细信息，人工完成意向院校筛选与核心需求确认，最终输出精准的目标院校/专业清单、对应院校录取核心要求说明。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="module-detail-item">
+                                <div class="module-number">02</div>
+                                <div class="module-content">
+                                    <h5 class="module-title">升学背景提升与申请材料制作AI辅助板块</h5>
+                                    <p class="module-desc">本板块是升学竞争力的核心赋能环节，实现从背景短板定位到申请材料终审、复试准备的全流程AI辅助。</p>
+                                    <ul class="module-subpoints">
+                                        <li><strong>背景竞争力评估与提升规划：</strong>人工提交个人背景材料与目标院校申请要求，AI完成背景竞争力拆解、目标院校录取偏好匹配、待提升短板定位，输出科研/竞赛/实习/志愿服务等多维度背景提升路径规划与时间节点拆解，人工确认后联动平台研赛创引擎完成资源对接与落地执行。</li>
+                                        <li><strong>申请材料架构梳理与智能生成：</strong>AI基于目标院校要求生成完整申请材料清单与标准化内容框架，人工补充个人核心经历信息后，AI一键生成个人陈述、简历、推荐信、复试自我介绍、研究计划等全套材料初稿。</li>
+                                        <li><strong>材料优化与终审配套准备：</strong>AI完成专业语言适配、逻辑润色、个人亮点强化，同步完成格式规范化、院校要求适配、版本一致性校验；人工完成内容核对与最终确认后，AI输出全套终稿材料，同步生成基于材料内容的面试高频问题预判与应答策略、投送时间规划与流程指引。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 研赛创・闭环引擎 -->
+                    <div class="engine-detail-card engine-yansai">
+                        <div class="engine-detail-header">
+                            <div class="engine-detail-icon">🔬</div>
+                            <div class="engine-detail-title-wrap">
+                                <h3 class="engine-detail-title">研赛创・闭环引擎</h3>
+                                <span class="engine-detail-badge">循环引擎</span>
+                            </div>
+                        </div>
+                        
+                        <div class="engine-detail-core">
+                            <h4 class="core-title">核心定位</h4>
+                            <p class="core-desc">平台综合能力与科创成果提升的专属AI服务引擎，完整覆盖在校学生学科竞赛、科研辅助、创新创业，职场人技能提升、副业创业全场景，解决学生竞赛备赛无专业指导、科研入门难、科创成果无法转化为升学/就业核心竞争力、高校产学研转化效率低的核心痛点。</p>
+                        </div>
+
+                        <div class="engine-detail-results">
+                            <h4 class="results-title">核心可量化成效</h4>
+                            <div class="results-list">
+                                <div class="result-item">
+                                    <span class="result-value">30+</span>
+                                    <span class="result-label">A/B类主流赛事备赛服务覆盖</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">45%</span>
+                                    <span class="result-label">试点学生赛事获奖率较行业平均水平提升</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">60%</span>
+                                    <span class="result-label">论文写作效率平均提升</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">70%</span>
+                                    <span class="result-label">文献检索时间平均缩短</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">20%-25%</span>
+                                    <span class="result-label">产学研转化效率，从传统模式的10%提升</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="engine-detail-modules">
+                            <h4 class="modules-title">核心板块</h4>
+                            <div class="module-detail-item">
+                                <div class="module-number">03</div>
+                                <div class="module-content">
+                                    <h5 class="module-title">大学生创业项目从0到1全流程AI孵化板块</h5>
+                                    <p class="module-desc">本板块聚焦创新创业全周期需求，实现从项目立项到商业计划书终稿、配套材料生成的全流程AI赋能。</p>
+                                    <ul class="module-subpoints">
+                                        <li><strong>项目立项与市场调研：</strong>人工提交创业idea/核心成果、明确创业方向，AI完成行业赛道分析、市场规模测算、竞争格局拆解、目标用户画像生成、竞品对标与差异化亮点挖掘，人工确认赛道定位与核心差异化优势。</li>
+                                        <li><strong>商业模式与项目框架构建：</strong>AI生成标准化创业项目大纲与商业模式画布，完成盈利模型测算、成本结构拆解、用户增长路径规划，人工调整盈利逻辑、确认核心业务流程与项目整体框架。</li>
+                                        <li><strong>商业计划书撰写与优化：</strong>AI分章节生成商业计划书初稿，覆盖执行摘要、产品服务、市场分析、运营计划、财务预测、团队介绍、风险管控全模块；人工完成核心内容强化、数据补充与亮点突出，AI同步完成语言逻辑优化、专业表述规范、数据图表可视化生成。</li>
+                                        <li><strong>财务测算与终稿校验：</strong>AI完成未来3-5年营收/成本/利润预测、盈亏平衡分析、现金流测算，同步设计项目风险点识别与管控方案、退出机制规划；最终完成全文交叉核对、数据一致性校验、格式规范化优化，输出终版商业计划书、项目运营方案与全周期发展规划。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="module-detail-item">
+                                <div class="module-number">04</div>
+                                <div class="module-content">
+                                    <h5 class="module-title">竞赛备赛与科研全周期AI辅助板块</h5>
+                                    <p class="module-desc">本板块分为竞赛全流程服务与科研全周期辅助两大核心模块，实现科创能力的全维度提升。</p>
+                                    <ul class="module-subpoints">
+                                        <li><strong>竞赛备赛AI辅助：</strong>覆盖教育部84项A/B类赛事知识图谱，整合近5年全国获奖案例、评审规则、选题趋势数据，实现赛事选题智能匹配、获奖案例深度解析、备赛全流程规划；配套商业计划书AI优化、路演PPT自动生成、演讲稿全流程撰写、答辩全真模拟与话术优化全流程服务，同时完成参赛团队智能匹配、指导老师资源对接。</li>
+                                        <li><strong>科研全周期AI辅助：</strong>融合文献智能检索、选题创新点挖掘、论文结构化写作辅助、专利申报指引四大核心功能，基于大模型实现中英文文献精准解读、写作逻辑智能优化、查重降重辅助；对接高校导师资源库，实现科研需求与导师资源的精准匹配，同时完成科研成果的一键归档，可直接复用至升学申请与求职材料中。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 职途创・赋能引擎 -->
+                    <div class="engine-detail-card engine-zhitu">
+                        <div class="engine-detail-header">
+                            <div class="engine-detail-icon">💼</div>
+                            <div class="engine-detail-title-wrap">
+                                <h3 class="engine-detail-title">职途创・赋能引擎</h3>
+                                <span class="engine-detail-badge">护航引擎</span>
+                            </div>
+                        </div>
+                        
+                        <div class="engine-detail-core">
+                            <h4 class="core-title">核心定位</h4>
+                            <p class="core-desc">平台职业落地与职场长期成长的专属AI服务引擎，自研「人-岗-企-校」四维智能匹配模型，完整覆盖在校学生/应届生市场化就业、体制内招录，职场人跳槽求职、职业转型、职场晋升全链路，解决校企人才供需错位、求职信息不对称、简历匹配度低、面试通过率低的核心痛点。</p>
+                        </div>
+
+                        <div class="engine-detail-results">
+                            <h4 class="results-title">核心可量化成效</h4>
+                            <div class="results-list">
+                                <div class="result-item">
+                                    <span class="result-value">42.8%</span>
+                                    <span class="result-label">AI简历优化使企业ATS初筛通过率平均提升</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">38%</span>
+                                    <span class="result-label">职场人跳槽成功率提升</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">85%</span>
+                                    <span class="result-label">人岗智能匹配精准度</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">60%-75%</span>
+                                    <span class="result-label">企业校招/社招效率提升</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">18%</span>
+                                    <span class="result-label">应届生试用期离职率，从行业平均35%降至</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">40%+</span>
+                                    <span class="result-label">企业校招综合成本降低</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="engine-detail-modules">
+                            <h4 class="modules-title">核心板块</h4>
+                            <div class="module-detail-item">
+                                <div class="module-number">05</div>
+                                <div class="module-content">
+                                    <h5 class="module-title">市场化就业全流程AI服务板块</h5>
+                                    <p class="module-desc">本板块聚焦企业求职全链路需求，构建"简历优化-网申指导-笔试训练-面试模拟-入职适配"全流程求职赋能体系。</p>
+                                    <ul class="module-subpoints">
+                                        <li><strong>求职材料梳理与科创成果转化赋能：</strong>AI划分简历核心模块、优势展示板块，汇总全套必备求职材料清单，结合岗位属性定制材料内容框架；联动研赛创引擎，将用户科研成果、竞赛奖项、双创项目经历，转化为专业能力、团队协作、实操能力的核心亮点，融入学历优势，强化硬性竞争力。</li>
+                                        <li><strong>全套求职材料智能生成与精细化打磨：</strong>AI一键生成简历、自我介绍、实践经历初稿，贴合企业与岗位需求调整内容侧重点，完成成果量化、表述优化、冗余删减；人工补充细节、强化特色亮点后，AI完成语言润色、专业术语优化、语句精简，同步统一格式排版、适配企业投递标准，核查内容真实性与岗位匹配度。</li>
+                                        <li><strong>笔试面试全流程AI辅助：</strong>还原真实校招、社招面试场景，内置500+真题题库，完成全真场景模拟面试、多视角专业评审、核心失分点拆解、综合反馈报告输出；同步生成面试高频考点预判、应答全方案与优化训练计划，配套笔试专项训练、答题技巧优化、考前全真模考全流程服务。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="module-detail-item">
+                                <div class="module-number">06</div>
+                                <div class="module-content">
+                                    <h5 class="module-title">体制内招录全周期备考服务板块</h5>
+                                    <p class="module-desc">本板块针对国考、省考、选调生、事业单位、基层服务岗位全类型体制内招录场景，打造双轨并行的全周期服务体系。</p>
+                                    <ul class="module-subpoints">
+                                        <li><strong>招录政策解读与岗位智能筛选：</strong>实时更新全国体制内招录政策，完成政策解读与用户适配性分析；基于个人背景、专业、学历、地域偏好等维度，智能筛选适配岗位，完成报录比、历年分数线、竞争格局对比分析，输出最优报考建议。</li>
+                                        <li><strong>全周期备考规划与专项辅导：</strong>针对全职备考、在职备考不同场景，生成全周期备考规划表、分阶段学习方案、行测/申论专项训练计划；配套阶段测评与学习方案动态优化、考前全真模考与答题技巧优化、考前准备与应急预案制定。</li>
+                                        <li><strong>面试全流程专项辅导：</strong>针对结构化、无领导小组等主流面试形式，完成政策热点解读、高频考点预判、答题框架搭建、全真场景模拟；同步完成资格复审、政审体检全流程指引，适配体制内招录全流程需求。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 六大模块总览区 -->
+        <section class="modules-overview" id="modules-overview">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">六大细分服务小板块</span>
+                    <h2 class="section-title">全方位服务覆盖</h2>
+                    <p class="section-desc">从升学到就业，全周期陪伴式服务</p>
+                </div>
+
+                <div class="modules-grid">
+                    <!-- 模块1 -->
+                    <div class="module-card" data-module="1">
+                        <div class="module-number">01</div>
+                        <div class="module-icon">📚</div>
+                        <h3 class="module-title">升学全周期进阶服务</h3>
+                        <p class="module-belong">所属：升学创进阶引擎板块</p>
+                        <p class="module-desc">以学生升学需求为核心，通过四阶递进式流程，实现从择校定标到录取落地的全流程AI辅助服务，覆盖专升本、考研、保研、留学四大核心升学赛道。</p>
+                        <div class="module-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">🎯</span>
+                                <span>择校智能匹配</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">📖</span>
+                                <span>备考全流程辅导</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✨</span>
+                                <span>背景提升与材料</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🎤</span>
+                                <span>面试全真模拟</span>
+                            </div>
+                        </div>
+                        <a href="module-1-shengxue.html" class="module-link">
+                            <span>进入模块</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- 模块2 -->
+                    <div class="module-card" data-module="2">
+                        <div class="module-number">02</div>
+                        <div class="module-icon">💡</div>
+                        <h3 class="module-title">创新创业全流程AI孵化服务</h3>
+                        <p class="module-belong">所属：研赛创全周期孵化板块</p>
+                        <p class="module-desc">为大学生创业项目提供从0到1的全流程AI孵化、评审与投融资对接服务，实现创业项目从idea到落地、融资的全周期赋能。</p>
+                        <div class="module-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">🚀</span>
+                                <span>从0到1全流程孵化</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">📊</span>
+                                <span>全维度AI评审</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">💰</span>
+                                <span>投融资对接辅助</span>
+                            </div>
+                        </div>
+                        <a href="module-2-chuangye.html" class="module-link">
+                            <span>进入模块</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- 模块3 -->
+                    <div class="module-card" data-module="3">
+                        <div class="module-number">03</div>
+                        <div class="module-icon">🏆</div>
+                        <h3 class="module-title">竞赛全流程AI辅助服务</h3>
+                        <p class="module-belong">所属：研赛创全周期孵化板块</p>
+                        <p class="module-desc">为大学生学科竞赛、双创赛事提供从备赛到路演答辩的全流程AI辅助服务，覆盖商业计划书制作、路演PPT打磨、演讲稿撰写、模拟评审全环节。</p>
+                        <div class="module-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">📝</span>
+                                <span>商业计划书制作</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🎨</span>
+                                <span>路演PPT打磨</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🎤</span>
+                                <span>演讲稿撰写</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">⭐</span>
+                                <span>模拟评审优化</span>
+                            </div>
+                        </div>
+                        <a href="module-3-jingsai.html" class="module-link">
+                            <span>进入模块</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- 模块4 -->
+                    <div class="module-card" data-module="4">
+                        <div class="module-number">04</div>
+                        <div class="module-icon">🔬</div>
+                        <h3 class="module-title">科研全流程评审优化服务</h3>
+                        <p class="module-belong">所属：研赛创全周期孵化板块</p>
+                        <p class="module-desc">为大学生科研项目、论文专利创作提供全流程AI评审、优化与成果转化服务，联动升学创、职途创板块实现科研成果的升学与就业价值转化。</p>
+                        <div class="module-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">📋</span>
+                                <span>全维度AI评审</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🔄</span>
+                                <span>成果转化赋能</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">📈</span>
+                                <span>升学就业转化</span>
+                            </div>
+                        </div>
+                        <a href="module-4-keyan.html" class="module-link">
+                            <span>进入模块</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- 模块5 -->
+                    <div class="module-card" data-module="5">
+                        <div class="module-number">05</div>
+                        <div class="module-icon">💼</div>
+                        <h3 class="module-title">市场化就业全链路服务</h3>
+                        <p class="module-belong">所属：职途创全链路服务板块</p>
+                        <p class="module-desc">为大学生市场化求职提供从职业定位、求职材料制作、笔面试辅导到offer获取的全链路服务，核心实现科创成果与求职竞争力的转化赋能。</p>
+                        <div class="module-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">📄</span>
+                                <span>求职材料梳理</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🔄</span>
+                                <span>科创成果转化</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🎯</span>
+                                <span>笔面试辅导</span>
+                            </div>
+                        </div>
+                        <a href="module-5-jiuye.html" class="module-link">
+                            <span>进入模块</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- 模块6 -->
+                    <div class="module-card" data-module="6">
+                        <div class="module-number">06</div>
+                        <div class="module-icon">📋</div>
+                        <h3 class="module-title">体制内招录全周期服务</h3>
+                        <p class="module-belong">所属：职途创全链路服务板块</p>
+                        <p class="module-desc">为大学生公务员、事业单位、选调生、军队文职等体制内招录考试，提供从岗位定位、报考指导、笔试备考、面试辅导到政审录用的全周期服务。</p>
+                        <div class="module-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">🎯</span>
+                                <span>岗位匹配与报考</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">📖</span>
+                                <span>笔试备考辅导</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🎤</span>
+                                <span>面试与政审辅助</span>
+                            </div>
+                        </div>
+                        <a href="module-6-tizhi.html" class="module-link">
+                            <span>进入模块</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 生态联动展示区 -->
+        <section class="ecosystem-showcase" id="ecosystem">
+            <div class="section-container">
+                <div class="section-header light">
+                    <span class="section-badge">生态联动</span>
+                    <h2 class="section-title">大学生成长全周期闭环</h2>
+                    <p class="section-desc">三大引擎协同运作，形成升学-研赛-就业的完整闭环</p>
+                </div>
+
+                <div class="ecosystem-diagram">
+                    <div class="eco-center">
+                        <div class="eco-center-icon">🎓</div>
+                        <div class="eco-center-text">大学生成长<br>全周期</div>
+                    </div>
+
+                    <div class="eco-nodes">
+                        <div class="eco-node node-shengxue">
+                            <div class="eco-node-icon">📚</div>
+                            <div class="eco-node-title">升学创</div>
+                            <div class="eco-node-desc">进阶引擎</div>
+                        </div>
+
+                        <div class="eco-node node-yansai">
+                            <div class="eco-node-icon">🔬</div>
+                            <div class="eco-node-title">研赛创</div>
+                            <div class="eco-node-desc">循环引擎</div>
+                        </div>
+
+                        <div class="eco-node node-zhitu">
+                            <div class="eco-node-icon">💼</div>
+                            <div class="eco-node-title">职途创</div>
+                            <div class="eco-node-desc">护航引擎</div>
+                        </div>
+                    </div>
+
+                    <div class="eco-arrows">
+                        <svg class="arrow arrow-1" viewBox="0 0 100 50">
+                            <path d="M10 40 Q 50 10, 90 40" fill="none" stroke="url(#gradient1)" stroke-width="2" marker-end="url(#arrowhead)"/>
+                        </svg>
+                        <svg class="arrow arrow-2" viewBox="0 0 100 50">
+                            <path d="M10 10 Q 50 40, 90 10" fill="none" stroke="url(#gradient2)" stroke-width="2" marker-end="url(#arrowhead)"/>
+                        </svg>
+                        <svg class="arrow arrow-3" viewBox="0 0 50 100">
+                            <path d="M10 10 Q 40 50, 10 90" fill="none" stroke="url(#gradient3)" stroke-width="2" marker-end="url(#arrowhead)"/>
+                        </svg>
+                    </div>
+
+                    <svg class="defs">
+                        <defs>
+                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#165DFF"/>
+                                <stop offset="100%" style="stop-color:#8656FF"/>
+                            </linearGradient>
+                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#8656FF"/>
+                                <stop offset="100%" style="stop-color:#00C48C"/>
+                            </linearGradient>
+                            <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00C48C"/>
+                                <stop offset="100%" style="stop-color:#165DFF"/>
+                            </linearGradient>
+                            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#fff"/>
+                            </marker>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div class="ecosystem-flow">
+                    <div class="flow-step">
+                        <div class="flow-step-icon">📚</div>
+                        <div class="flow-step-content">
+                            <h4>升学创</h4>
+                            <p>通过升学进阶服务，提升背景和能力</p>
+                        </div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">🔬</div>
+                        <div class="flow-step-content">
+                            <h4>研赛创</h4>
+                            <p>参与科研竞赛，积累成果和经验</p>
+                        </div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">💼</div>
+                        <div class="flow-step-content">
+                            <h4>职途创</h4>
+                            <p>将成果转化为就业竞争力</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 底部区域 -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <div class="brand-logo">
+                            <span class="logo-icon">🚀</span>
+                            <span class="logo-text">楚创通</span>
+                        </div>
+                        <p class="brand-desc">大学生全周期生涯规划多模态AI平台</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>核心引擎</h4>
+                            <ul>
+                                <li><a href="module-1-shengxue.html">升学创</a></li>
+                                <li><a href="module-2-chuangye.html">研赛创</a></li>
+                                <li><a href="module-5-jiuye.html">职途创</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>服务板块</h4>
+                            <ul>
+                                <li><a href="module-1-shengxue.html">升学进阶</a></li>
+                                <li><a href="module-2-chuangye.html">创新创业</a></li>
+                                <li><a href="module-3-jingsai.html">竞赛服务</a></li>
+                                <li><a href="module-4-keyan.html">科研评审</a></li>
+                                <li><a href="module-5-jiuye.html">市场化就业</a></li>
+                                <li><a href="module-6-tizhi.html">体制内招录</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>关于我们</h4>
+                            <ul>
+                                <li><a href="about.html">公司简介</a></li>
+                                <li><a href="cases.html">落地成果</a></li>
+                                <li><a href="ecosystem.html">合作生态</a></li>
+                                <li><a href="contact.html">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 楚创通. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

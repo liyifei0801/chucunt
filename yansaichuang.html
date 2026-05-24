@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研赛创 - 楚创通</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 模块1：顶部固定悬浮导航栏 -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html" class="brand-logo">
+                    <span class="logo-icon">🚀</span>
+                    <div class="logo-text">
+                        <span class="logo-title">楚创通</span>
+                        <span class="logo-subtitle">大学生全周期生涯规划多模态AI平台</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
+                    <li class="nav-item"><a href="solutions.html" class="nav-link">解决方案</a></li>
+                    <li class="nav-item"><a href="engines.html" class="nav-link">核心引擎</a></li>
+                    <li class="nav-item"><a href="cases.html" class="nav-link">落地成果</a></li>
+                    <li class="nav-item"><a href="ecosystem.html" class="nav-link">合作生态</a></li>
+                    <li class="nav-item"><a href="index.html#team" class="nav-link">核心团队</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="login.html" class="btn-primary-gradient">立即体验</a>
+                <a href="contact.html" class="btn-outline-primary">合作咨询</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 左侧垂直引擎切换侧边栏 -->
+    <aside class="engine-left-sidebar" id="engine-sidebar">
+        <div class="sidebar-logo">
+            <span class="sidebar-icon">🚀</span>
+            <span class="sidebar-title">核心引擎</span>
+        </div>
+        <div class="engine-tabs-list">
+            <!-- 升学创 -->
+            <div class="engine-group">
+                <a href="shengxuechuang.html" class="engine-tab-btn" data-engine="shengxuechuang" id="shengxue">
+                    <span class="tab-icon">📚</span>
+                    <div class="tab-text">
+                        <span class="tab-name">升学创</span>
+                        <span class="tab-type">进阶引擎</span>
+                    </div>
+                </a>
+                <div class="sub-tabs-list" data-engine="shengxuechuang" style="display: none;">
+                    <button class="sub-tab-btn" data-tab="zexiao">择校智能匹配</button>
+                    <button class="sub-tab-btn" data-tab="beikao">分赛道备考辅导</button>
+                    <button class="sub-tab-btn" data-tab="beijing">背景提升与材料制作</button>
+                    <button class="sub-tab-btn" data-tab="mianshi">面试全真模拟</button>
+                </div>
+            </div>
+            <!-- 研赛创 -->
+            <div class="engine-group">
+                <button class="engine-tab-btn active" data-engine="yansaichuang" id="yansai">
+                    <span class="tab-icon">🔬</span>
+                    <div class="tab-text">
+                        <span class="tab-name">研赛创</span>
+                        <span class="tab-type">循环引擎</span>
+                    </div>
+                </button>
+                <div class="sub-tabs-list" data-engine="yansaichuang">
+                    <button class="sub-tab-btn active" data-tab="keyan2">科研辅助</button>
+                    <button class="sub-tab-btn" data-tab="jingsai2">竞赛备赛</button>
+                    <button class="sub-tab-btn" data-tab="chuangye2">创新创业</button>
+                </div>
+            </div>
+            <!-- 职途创 -->
+            <div class="engine-group">
+                <a href="zhituchuang.html" class="engine-tab-btn" data-engine="zhituchuang" id="zhitu">
+                    <span class="tab-icon">💼</span>
+                    <div class="tab-text">
+                        <span class="tab-name">职途创</span>
+                        <span class="tab-type">护航引擎</span>
+                    </div>
+                </a>
+                <div class="sub-tabs-list" data-engine="zhituchuang" style="display: none;">
+                    <button class="sub-tab-btn active" data-tab="shichang2">市场化就业</button>
+                    <button class="sub-tab-btn" data-tab="tizhi2">体制内招录</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-footer">
+            <a href="contact.html" class="sidebar-cta-btn">立即体验</a>
+        </div>
+    </aside>
+
+    <!-- 引擎详情页面容器 -->
+    <div class="engine-detail-page">
+        <!-- 首屏Hero区 -->
+        <section class="engine-hero-section" id="hero-section">
+            <div class="engine-hero-container">
+                <div class="engine-hero-left">
+                    <div class="engine-badge" id="hero-engine-badge">研赛创・循环引擎</div>
+                    <h1 class="engine-hero-title" id="hero-title">科研竞赛，创新创业</h1>
+                    <p class="engine-hero-desc" id="hero-desc">科研辅助、竞赛备赛、创新创业，全方位提升竞争力</p>
+                    <div class="engine-hero-stats">
+                        <div class="hero-stat">
+                            <div class="stat-value">85%+</div>
+                            <div class="stat-label">竞赛获奖率</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="stat-value">70%+</div>
+                            <div class="stat-label">科研效率提升</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="stat-value">60%+</div>
+                            <div class="stat-label">创业成功率</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="engine-hero-right">
+                    <div class="hero-diagram">
+                        <div class="diagram-item active">科研辅助</div>
+                        <div class="diagram-item">竞赛备赛</div>
+                        <div class="diagram-item">创新创业</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#flow-content" class="scroll-indicator">
+                <span>向下滚动</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"></path>
+                </svg>
+            </a>
+        </section>
+
+        <!-- 沉浸式流程滚动区 -->
+        <section class="flow-content-container" id="flow-content">
+            <!-- 研赛创·科研辅助 -->
+            <div class="flow-panel active" id="flow-keyan2">
+                <div class="flow-section" id="keyan2-step1">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left" style="flex: 0 0 100%; max-width: 100%;">
+                            <div class="step-number">01</div>
+                            <h3 class="step-title">科研辅助功能开发中</h3>
+                            <p style="color: #64748B; font-size: 16px; margin-top: 20px;">
+                                研赛创的科研辅助功能正在开发中，敬请期待！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 研赛创·竞赛备赛 -->
+            <div class="flow-panel" id="flow-jingsai2">
+                <div class="flow-section" id="jingsai2-step1">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left" style="flex: 0 0 100%; max-width: 100%;">
+                            <div class="step-number">01</div>
+                            <h3 class="step-title">竞赛备赛功能开发中</h3>
+                            <p style="color: #64748B; font-size: 16px; margin-top: 20px;">
+                                研赛创的竞赛备赛功能正在开发中，敬请期待！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 研赛创·创新创业 -->
+            <div class="flow-panel" id="flow-chuangye2">
+                <div class="flow-section" id="chuangye2-step1">
+                    <div class="flow-section-container">
+                        <div class="flow-step-left" style="flex: 0 0 100%; max-width: 100%;">
+                            <div class="step-number">01</div>
+                            <h3 class="step-title">创新创业功能开发中</h3>
+                            <p style="color: #64748B; font-size: 16px; margin-top: 20px;">
+                                研赛创的创新创业功能正在开发中，敬请期待！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 三大引擎Tab栏的JavaScript -->
+    <script>
+        // 处理引擎Tab栏显示
+        const engineTrigger = document.getElementById('engineTrigger');
+        const engineTabsBar = document.getElementById('engineTabsBar');
+        
+        if (engineTrigger) {
+            engineTrigger.addEventListener('click', function() {
+                if (engineTabsBar) {
+                    engineTabsBar.classList.toggle('show');
+                }
+            });
+        }
+        
+        // 点击页面其他区域关闭引擎Tab栏
+        document.addEventListener('click', function(event) {
+            if (engineTabsBar && !engineTabsBar.contains(event.target) && 
+                event.target !== engineTrigger && !engineTrigger.contains(event.target)) {
+                engineTabsBar.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
